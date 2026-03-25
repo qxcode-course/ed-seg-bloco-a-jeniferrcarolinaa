@@ -1,1 +1,10 @@
 2026-03-23 16:01:15, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-23 16:02:50, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-23 16:02:54, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-23 16:04:05, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0
+2026-03-23 16:04:30, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0
+2026-03-23 16:05:05, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-23 16:07:15, MOVE, v:1, k:ed@pintando, mode:DOWN
+2026-03-23 16:07:30, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-23 16:11:33, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-23 16:12:57, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0, size:5

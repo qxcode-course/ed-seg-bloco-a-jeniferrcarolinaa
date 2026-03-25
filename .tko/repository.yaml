@@ -13,16 +13,15 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@main-quest
-- sandbox@student_sandbox_alias:00_rascunhos
-- ed@análise
+- ed@basic
+- sandbox@00_rascunhos
 tasks: {}
 flags:
-  painel: 0
-  quests: 0
-  tracks: 0
+  panel: 0
+  inbox: 1
+  show_panel: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@princesa
+selected: ed@pintando

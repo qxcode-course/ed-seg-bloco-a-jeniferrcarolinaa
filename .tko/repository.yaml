@@ -15,7 +15,8 @@ sources:
 expanded:
 - ed@basic
 - sandbox@00_rascunhos
-tasks: {}
+tasks:
+  ed@pintando: '{rate:100}'
 flags:
   panel: 0
   inbox: 1

@@ -14,6 +14,6 @@ func main() {
 	s = (a + b + c) / 2
 	valor = s * (s - a) * (s - b) * (s - c)
 	area = math.Sqrt(valor)
-	fmt.Printf("%v.2f", area)
+	fmt.Printf("%.2f\n", area)
 
 }

@@ -1,2 +1,8 @@
 2026-03-25 13:06:36, MOVE, v:1, k:ed@pintando, mode:PICK
 2026-03-25 13:39:59, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-25 13:55:41, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-03-25 13:55:49, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0, size:19
+2026-03-25 13:57:10, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0
+2026-03-25 13:57:31, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0, size:19
+2026-03-25 13:58:20, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0, size:19
+2026-03-25 13:59:05, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:19

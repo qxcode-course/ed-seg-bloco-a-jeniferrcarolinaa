@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-01-04",
+            "content": "@@ -1,109 +1,4 @@\n-//usando if/else em Go:%0A//if %3Ccondi%C3%A7%C3%A3o%3E%7B%0A//codigo%0A//%7Delse if %3Ccondicao%3E%7B%0A//codigo%0A//%7Delse%7B%0A//codigo%0A//%7D%0A%0A\n pack\n@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,341 +37,39 @@\n ) %7B%0A\n-%09var name string%0A%09var age int%0A%0A%09fmt.Scan(&name)%0A%09fmt.Scan(&age)%0A%0A%09if age %3C 12 %7B%0A%09%09fmt.Printf(%22%25s eh crianca%22, name)%0A%09%7D else if age %3C 18 %7B%0A%09%09fmt.Printf(%22%25s eh jovem%22, name)%0A%09%7D else if age %3C 65 %7B%0A%09%09fmt.Printf(%22%25s eh adulto%22, name)%0A%09%7D else if age %3C 1000 %7B%0A%09%09fmt.Printf(%22%25s eh idoso%22, name)%0A%09%7D else %7B%0A%09%09fmt.Printf(%22%25s eh mumia%22, name)%0A%09%7D%0A\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-01-18",
+            "content": "@@ -247,18 +247,16 @@\n  crianca\n-%5Cn\n %22, name)\n@@ -303,18 +303,16 @@\n eh jovem\n-%5Cn\n %22, name)\n@@ -360,18 +360,16 @@\n h adulto\n-%5Cn\n %22, name)\n@@ -418,18 +418,16 @@\n eh idoso\n-%5Cn\n %22, name)\n@@ -466,10 +466,8 @@\n umia\n-%5Cn\n %22, n\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-30_17-01-47",
+            "content": "//usando if/else em Go:\n//if <condi\u00e7\u00e3o>{\n//codigo\n//}else if <condicao>{\n//codigo\n//}else{\n//codigo\n//}\n\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar name string\n\tvar age int\n\n\tfmt.Scan(&name)\n\tfmt.Scan(&age)\n\n\tif age < 12 {\n\t\tfmt.Printf(\"%s eh crianca\\n\", name)\n\t} else if age < 18 {\n\t\tfmt.Printf(\"%s eh jovem\\n\", name)\n\t} else if age < 65 {\n\t\tfmt.Printf(\"%s eh adulto\\n\", name)\n\t} else if age < 1000 {\n\t\tfmt.Printf(\"%s eh idoso\\n\", name)\n\t} else {\n\t\tfmt.Printf(\"%s eh mumia\\n\", name)\n\t}\n\n}\n",
+            "lines": "33"
+        }
+    ]
+}

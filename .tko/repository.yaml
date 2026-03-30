@@ -16,13 +16,12 @@ expanded:
 - ed@basic
 - sandbox@00_rascunhos
 tasks:
-  ed@pintando: '{rate:100}'
+  ed@pintando: '{self:1, rate:100, study:30, guided:1, concept:1}'
 flags:
-  panel: 0
-  inbox: 1
-  show_panel: 0
-  tasks: 0
+  panel: 1
+  inbox: 0
+  show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@pintando
+selected: ed@mumia

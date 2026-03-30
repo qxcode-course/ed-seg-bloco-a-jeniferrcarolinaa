@@ -1,27 +1,7 @@
 {
     "patches": [
         {
-            "label": "2026-03-23_16-12-57",
-            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A%0A\n func\n@@ -37,212 +37,38 @@\n ) %7B%0A\n-%09var a, b, c float64%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%09fmt.Scan(&c)%0A%09var s, area, valor float64%0A%09s = (a + b + c) / 2%0A%09valor = s * (s - a) * (s - b) * (s - c)%0A%09area = math.Sqrt(valor)%0A%09fmt.Printf(%22%25v.2f%22, area)%0A\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D\n-%0A\n",
-            "lines": "5"
-        },
-        {
-            "label": "2026-03-25_13-55-49",
-            "content": "@@ -240,16 +240,17 @@\n rintf(%22%25\n+v\n .2f%22, ar\n",
-            "lines": "19"
-        },
-        {
-            "label": "2026-03-25_13-57-31",
-            "content": "@@ -240,10 +240,9 @@\n rint\n-ln\n+f\n (%22%25.\n",
-            "lines": "19"
-        },
-        {
-            "label": "2026-03-25_13-58-20",
-            "content": "@@ -240,17 +240,16 @@\n rint\n-f\n+ln\n (%22%25.2f\n-%5Cn\n %22, a\n",
-            "lines": "19"
-        },
-        {
-            "label": "2026-03-25_13-59-05",
+            "label": "2026-03-30_16-37-08",
             "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c float64\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\tvar s, area, valor float64\n\ts = (a + b + c) / 2\n\tvalor = s * (s - a) * (s - b) * (s - c)\n\tarea = math.Sqrt(valor)\n\tfmt.Printf(\"%.2f\\n\", area)\n\n}\n",
             "lines": "19"
         }

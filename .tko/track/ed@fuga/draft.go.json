@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-19-45",
+            "content": "@@ -472,12 +472,8 @@\n 1 %C3%A9 \n-anti\n hor%C3%A1\n@@ -481,24 +481,28 @@\n io%0A%09%09//-1 %C3%A9 \n+anti\n hor%C3%A1rio%0A%09%09if\n@@ -519,112 +519,8 @@\n %09%09%09F\n- = F + 1%0A%09%09%09if F == 16 %7B%0A%09%09%09%09F = 0%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09if D == -1 %7B%0A%09%09%09F = F - 1%0A%09%09%09if F == -1 %7B%0A%09%09%09%09F = 15%0A%09%09%09%7D\n %0A%09%09%7D\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-31_16-26-23",
+            "content": "// em Go, o loop \u00e9 feito apenas com o for\n// estrutura normal:\n// for i:=0; i<5;i++{\n// linha de c\u00f3digo\n// }\n// estrutura estilo loop at\u00e9 um break (usando condi\u00e7\u00f5es):\n// for{\n// condi\u00e7\u00e3o\n// break\n// }\n// estrutura estilo while:\n// i:=0\n// for i < 5{\n// condi\u00e7\u00e3o\n// i++\n// }\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar H, P, F, D int\n\tfmt.Scan(&H, &P, &F, &D)\n\n\tfor {\n\t\tif P == F {\n\t\t\tfmt.Printf(\"N\\n\")\n\t\t\tbreak\n\t\t}\n\n\t\tif H == F {\n\t\t\tfmt.Printf(\"S\\n\")\n\t\t\tbreak\n\t\t}\n\t\t//1 \u00e9 antihor\u00e1rio\n\t\t//-1 \u00e9 hor\u00e1rio\n\t\tif D == 1 {\n\t\t\tF = F + 1\n\t\t\tif F == 16 {\n\t\t\t\tF = 0\n\t\t\t}\n\t\t}\n\n\t\tif D == -1 {\n\t\t\tF = F - 1\n\t\t\tif F == -1 {\n\t\t\t\tF = 15\n\t\t\t}\n\t\t}\n\t}\n}\n",
+            "lines": "51"
+        }
+    ]
+}

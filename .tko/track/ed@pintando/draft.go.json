@@ -1,9 +1,0 @@
-{
-    "patches": [
-        {
-            "label": "2026-03-30_16-37-08",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c float64\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\tvar s, area, valor float64\n\ts = (a + b + c) / 2\n\tvalor = s * (s - a) * (s - b) * (s - c)\n\tarea = math.Sqrt(valor)\n\tfmt.Printf(\"%.2f\\n\", area)\n\n}\n",
-            "lines": "19"
-        }
-    ]
-}

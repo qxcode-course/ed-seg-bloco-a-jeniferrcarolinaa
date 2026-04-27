@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_16-39-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,578 +37,39 @@\n ) %7B%0A\n-%09//Entrada de N competidores%0A%09var N int%0A%09fmt.Scan(&N)%0A%09//Entendendo o loop em Go:%0A%09//for i:= 0; i%3C; i++%0A%0A%09indiceV := 0%0A%09p := 0%0A%09melhorP := 0%0A%0A%09for i := 0; i %3C N; i++ %7B%0A%09%09var A, B int%0A%09%09fmt.Scan(&A, &B)%0A%0A%09%09if A %3E= 10 && B %3E= 10 %7B%0A%09%09%09p := A - B%0A%09%09%09if p %3C 0 %7B%0A%09%09%09%09p = -p%0A%09%09%09%7D%0A%09%09%09//como fazer o m%C3%B3dulo da diferen%C3%A7a entre dois n%C3%BAmeros ?%0A%09%09%09//n%C3%A3o existe pra inteiro, apenas para float64. seria:%0A%09%09%09//p := math.Abs(float64(A - B))%0A%09%09%7D%0A%0A%09%09if p %3E melhorP %7B%0A%09%09%09melhorP = p%0A%09%09%09indiceV = i%0A%09%09%7D%0A%09%7D%0A%0A%09if indiceV == -1 %7B%0A%09%09fmt.Printf(%22sem ganhador%22)%0A%09%7D else %7B%0A%09%09fmt.Println(indiceV)%0A%09%7D%0A\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-27_16-40-18",
+            "content": "@@ -187,17 +187,17 @@\n or i := \n-1\n+0\n ; i %3C N;\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-27_16-42-30",
+            "content": "@@ -152,17 +152,17 @@\n iceV := \n-1\n+0\n %0A%09p := 0\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-27_16-43-07",
+            "content": "@@ -187,17 +187,17 @@\n or i := \n-0\n+1\n ; i %3C N;\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-27_16-44-05",
+            "content": "@@ -152,17 +152,16 @@\n iceV := \n--\n 1%0A%09p := \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-27_16-45-45",
+            "content": "@@ -155,16 +155,24 @@\n V := -1%0A\n+%09p := 0%0A\n %09melhorP\n@@ -179,11 +179,9 @@\n  := \n-201\n+0\n %0A%0A%09f\n@@ -241,21 +241,8 @@\n  &B)\n-%0A%09%09p := A - B\n %0A%0A%09%09\n@@ -265,16 +265,30 @@\n %3E= 10 %7B%0A\n+%09%09%09p := A - B%0A\n %09%09%09if p \n@@ -472,17 +472,17 @@\n %0A%09%09if p \n-%3C\n+%3E\n  melhorP\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-27_16-49-48",
+            "content": "@@ -182,17 +182,17 @@\n or i := \n-1\n+0\n ; i %3C N;\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-27_16-50-23",
+            "content": "@@ -182,17 +182,17 @@\n or i := \n-0\n+1\n ; i %3C N;\n@@ -231,16 +231,29 @@\n (&A, &B)\n+%0A%09%09p := A - B\n %0A%0A%09%09if A\n@@ -276,22 +276,8 @@\n 0 %7B%0A\n-%09%09%09p := A - B%0A\n %09%09%09i\n@@ -453,18 +453,21 @@\n A - B))%0A\n-%0A\n %09\n+%09%7D%0A%0A\n %09%09if p %3C\n@@ -477,17 +477,16 @@\n lhorP %7B%0A\n-%09\n %09%09%09melho\n@@ -495,17 +495,16 @@\n  = p%0A%09%09%09\n-%09\n indiceV \n@@ -507,21 +507,16 @@\n ceV = i%0A\n-%09%09%09%7D%0A\n %09%09%7D%0A%09%7D%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-27_16-56-53",
+            "content": "@@ -551,18 +551,17 @@\n mt.Print\n-ln\n+f\n (%22sem ga\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-27_16-57-15",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t//Entrada de N competidores\n\tvar N int\n\tfmt.Scan(&N)\n\t//Entendendo o loop em Go:\n\t//for i:= 0; i<; i++\n\n\tindiceV := -1\n\tmelhorP := 201\n\n\tfor i := 0; i < N; i++ {\n\t\tvar A, B int\n\t\tfmt.Scan(&A, &B)\n\n\t\tif A >= 10 && B >= 10 {\n\t\t\tp := A - B\n\t\t\tif p < 0 {\n\t\t\t\tp = -p\n\t\t\t}\n\t\t\t//como fazer o m\u00f3dulo da diferen\u00e7a entre dois n\u00fameros ?\n\t\t\t//n\u00e3o existe pra inteiro, apenas para float64. seria:\n\t\t\t//p := math.Abs(float64(A - B))\n\n\t\t\tif p < melhorP {\n\t\t\t\tmelhorP = p\n\t\t\t\tindiceV = i\n\t\t\t}\n\t\t}\n\t}\n\n\tif indiceV == -1 {\n\t\tfmt.Println(\"sem ganhador\")\n\t} else {\n\t\tfmt.Println(indiceV)\n\t}\n\n}\n",
+            "lines": "41"
+        }
+    ]
+}

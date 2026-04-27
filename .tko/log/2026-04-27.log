@@ -1,0 +1,33 @@
+2026-04-27 15:58:51, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-04-27 15:58:53, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-04-27 15:59:00, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-04-27 15:58:51, MOVE, v:1, k:ed@mumia, mode:EDIT
+2026-04-27 15:59:00, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 15:59:00, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 15:59:04, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:02:29, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-04-27 16:39:53, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:5
+2026-04-27 16:40:18, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:42
+2026-04-27 16:41:51, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-04-27 16:41:48, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:40:11, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:42:15, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0
+2026-04-27 16:42:30, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:42
+2026-04-27 16:43:07, EXEC, v:1, k:ed@pedra, mode:FULL, rate:33, size:42
+2026-04-27 16:44:05, EXEC, v:1, k:ed@pedra, mode:FULL, rate:33, size:42
+2026-04-27 16:45:45, EXEC, v:1, k:ed@pedra, mode:FULL, rate:0, size:42
+2026-04-27 16:45:43, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:45:28, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:49:48, EXEC, v:1, k:ed@pedra, mode:FULL, rate:8, size:41
+2026-04-27 16:50:23, EXEC, v:1, k:ed@pedra, mode:FULL, rate:33, size:41
+2026-04-27 16:50:18, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:50:21, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:56:54, EXEC, v:1, k:ed@pedra, mode:FULL, rate:75, size:41
+2026-04-27 16:56:36, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:56:51, MOVE, v:1, k:ed@pedra, mode:EDIT
+2026-04-27 16:57:16, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100, size:41
+2026-04-27 16:57:25, EXEC, v:1, k:ed@pedra, mode:FULL, rate:100
+2026-04-27 16:59:02, SELF, v:1, k:ed@pedra, self:1, rate:100, study:50, concept:1, refactor:1
+2026-04-27 16:59:07, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-04-27 16:59:29, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-04-27 16:59:31, MOVE, v:1, k:ed@pedra, mode:BACK

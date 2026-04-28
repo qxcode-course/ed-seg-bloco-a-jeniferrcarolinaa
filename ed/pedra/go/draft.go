@@ -21,7 +21,7 @@ func main() {
 			if p < 0 {
 				p = -p
 			}
-			//como fazer o módulo da diferença entre dois números ?
+			//como fazer o ódulo da diferença entre dois números ?
 			//não existe pra inteiro, apenas para float64. seria:
 			//p := math.Abs(float64(A - B))
 

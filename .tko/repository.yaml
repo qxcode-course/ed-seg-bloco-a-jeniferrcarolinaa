@@ -15,8 +15,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@map_set
 - ed@basic
+- ed@map_set
 flags:
   inbox: all
   panel: graph
@@ -25,3 +25,4 @@ flags:
   show_time: 'true'
 lang: go
 selected: ed@casais
+selected_index: 5

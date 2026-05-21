@@ -37,7 +37,52 @@
         },
         {
             "label": "2026-05-21_17-07-56",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t//ler a quantidade de figurinhas do album\n\tvar qAlbum int\n\tvar qTotal int\n\tfmt.Scan(&qAlbum)\n\tfmt.Scan(&qTotal)\n\t//em ordem crescente, ler as figurinhas do album\n\t//usar o for para ler as figurinhas do album\n\tvar contador [51]int //vetor que conta a quantidade repetida da figu\n\tfor i := 0; i < qTotal; i++ {\n\t\tvar fig int    //figurinha que est\u00e1 sendo lida\n\t\tfmt.Scan(&fig) //guarda a figurinha lida\n\t\t//saber quantas vezes a figurinha foi repetida\n\t\tcontador[fig]++\n\t}\n\n\t//imprimir as figurinhas repetidas\n\tachou := false //ainda n\u00e3o achou figurinhas repetidas\n\t//percorrer figurinhas do \u00e1lbum\n\tfor i := 1; i < qTotal; i++ {\n\t\tfor j := 1; j < contador[i]; j++ {\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \") //\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tachou = true //achou figurinhas repetidas\n\t\t}\n\t}\n\n\tfmt.Println() //quebra de linha\n\n\tif achou == false {\n\t\tfmt.Print(\"N\")\n\t}\n\n\tachou = false\n\tfor i := 1; i <= qAlbum; i++ {\n\t\tif contador[i] == 0 { // quando a fig n\u00e3o foi encontrada\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tachou = true\n\n\t\t}\n\n\t}\n\n\tfmt.Println()\n\n\tif achou == false {\n\t\tfmt.Print(\"N\")\n\t}\n}\n",
+            "content": "@@ -332,21 +332,21 @@\n 0; i %3C q\n-Album\n+Total\n ; i++ %7B%0A\n@@ -806,24 +806,58 @@\n das%0A%09%09%7D%0A%09%7D%0A%0A\n+%09fmt.Println() //quebra de linha%0A%0A\n %09if achou ==\n@@ -890,42 +890,8 @@\n %09%7D%0A%0A\n-%09fmt.Println() //quebra de linha%0A%0A\n %09ach\n@@ -1072,16 +1072,32 @@\n %09%7D%0A%0A%09%7D%0A%0A\n+%09fmt.Println()%0A%0A\n %09if acho\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-21_18-01-22",
+            "content": "@@ -328,29 +328,29 @@\n  := 0; i %3C q\n-Total\n+Album\n ; i++ %7B%0A%09%09va\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-21_18-01-51",
+            "content": "@@ -644,32 +644,31 @@\n  i := 1; i %3C\n-=\n  q\n-Album\n+Total\n ; i++ %7B%0A%09%09fo\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-21_18-03-02",
+            "content": "@@ -1077,24 +1077,8 @@\n %09%7D%0A%0A\n-%09fmt.Println()%0A%0A\n %09if \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-21_18-05-38",
+            "content": "@@ -815,42 +815,8 @@\n %09%7D%0A%0A\n-%09fmt.Println() //quebra de linha%0A%0A\n %09if \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-21_18-06-12",
+            "content": "@@ -807,24 +807,58 @@\n das%0A%09%09%7D%0A%09%7D%0A%0A\n+%09fmt.Println() //quebra de linha%0A%0A\n %09if achou ==\n@@ -1107,16 +1107,32 @@\n %09%7D%0A%0A%09%7D%0A%0A\n+%09fmt.Println()%0A%0A\n %09if acho\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-21_18-09-44",
+            "content": "@@ -1118,23 +1118,6 @@\n %0A%09%7D%0A\n-%0A%09fmt.Println()%0A%0A\n %7D%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-21_18-10-56",
+            "content": "@@ -1115,10 +1115,26 @@\n N%22)%0A%09%7D%0A%0A\n+%09fmt.Println()%0A%0A\n %7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-05-21_18-11-24",
+            "content": "@@ -1119,39 +1119,6 @@\n %09%7D%0A%0A\n-%09fmt.Println() //quebra de linha%0A\n %7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-21_18-12-10",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t//ler a quantidade de figurinhas do album\n\tvar qAlbum int\n\tvar qTotal int\n\tfmt.Scan(&qAlbum)\n\tfmt.Scan(&qTotal)\n\t//em ordem crescente, ler as figurinhas do album\n\t//usar o for para ler as figurinhas do album\n\tvar contador [51]int //vetor que conta a quantidade repetida da figu\n\tfor i := 0; i < qTotal; i++ {\n\t\tvar fig int    //figurinha que est\u00e1 sendo lida\n\t\tfmt.Scan(&fig) //guarda a figurinha lida\n\t\t//saber quantas vezes a figurinha foi repetida\n\t\tcontador[fig]++\n\t}\n\n\t//imprimir as figurinhas repetidas\n\tachou := false //ainda n\u00e3o achou figurinhas repetidas\n\t//percorrer figurinhas do \u00e1lbum\n\tfor i := 1; i <= qAlbum; i++ {\n\t\tfor j := 1; j < contador[i]; j++ {\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \") //\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tachou = true //achou figurinhas repetidas\n\t\t}\n\t}\n\n\tif achou == false {\n\t\tfmt.Print(\"N\")\n\t}\n\n\tfmt.Println() //quebra de linha\n\n\tachou = false\n\tfor i := 1; i <= qAlbum; i++ {\n\t\tif contador[i] == 0 { // quando a fig n\u00e3o foi encontrada\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tachou = true\n\n\t\t}\n\n\t}\n\n\tif achou == false {\n\t\tfmt.Print(\"N\")\n\t}\n\n\tfmt.Println() //quebra de linha\n}\n",
             "lines": "58"
         }
     ]

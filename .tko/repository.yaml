@@ -14,8 +14,8 @@ sources:
   quests: null
 expanded:
 - ed@basic
-- ed@map_set
 - sandbox@sandbox
+- ed@map_set
 flags:
   inbox: all
   panel: graph
@@ -23,5 +23,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@baruel
-selected_index: 8
+selected: ed@fuga
+selected_index: 5

@@ -21,7 +21,7 @@ func main() {
 	//imprimir as figurinhas repetidas
 	achou := false //ainda não achou figurinhas repetidas
 	//percorrer figurinhas do álbum
-	for i := 1; i < qTotal; i++ {
+	for i := 1; i <= qAlbum; i++ {
 		for j := 1; j < contador[i]; j++ {
 			if achou {
 				fmt.Print(" ") //
@@ -31,11 +31,11 @@ func main() {
 		}
 	}
 
-	fmt.Println() //quebra de linha
-
 	if achou == false {
 		fmt.Print("N")
 	}
+
+	fmt.Println() //quebra de linha
 
 	achou = false
 	for i := 1; i <= qAlbum; i++ {
@@ -50,9 +50,9 @@ func main() {
 
 	}
 
-	fmt.Println()
-
 	if achou == false {
 		fmt.Print("N")
 	}
+
+	fmt.Println() //quebra de linha
 }

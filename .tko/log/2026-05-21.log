@@ -51,3 +51,14 @@
 2026-05-21 18:21:38, MOVE, v:1, k:ed@baruel, mode:BACK
 2026-05-21 18:21:48, MOVE, v:1, k:ed@fuga, mode:PICK
 2026-05-21 18:22:18, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0
+2026-05-21 18:20:31, MOVE, v:1, k:ed@baruel, mode:EDIT
+2026-05-21 18:21:48, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-21 18:21:48, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-21 18:22:55, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-21 18:22:12, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-21 18:22:18, MOVE, v:1, k:ed@fuga, mode:EDIT
+2026-05-21 18:24:02, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100
+2026-05-21 18:24:28, SELF, v:1, k:ed@fuga, self:1, rate:100, study:40, concept:1
+2026-05-21 18:24:30, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-05-21 18:24:42, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-05-21 18:24:56, EXEC, v:1, k:ed@mumia, mode:FULL, rate:0, size:33

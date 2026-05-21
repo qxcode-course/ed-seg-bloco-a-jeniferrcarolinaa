@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-21_16-59-05",
+            "content": "@@ -810,16 +810,58 @@\n %09%09%7D%0A%09%7D%0A%0A\n+%09if achou == false %7B%0A%09%09fmt.Print(%22N%22)%0A%09%7D%0A%0A\n %09achou =\n@@ -885,21 +885,21 @@\n 1; i %3C q\n-Album\n+Total\n ; i++ %7B%0A\n@@ -1038,49 +1038,7 @@\n %7D%0A%09%7D\n-%0A%0A%09if achou == false %7B%0A%09%09fmt.Print(%22N%22)%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-21_17-02-59",
+            "content": "@@ -704,49 +704,8 @@\n + %7B%0A\n-%09%09%09if achou %7B%0A%09%09%09%09fmt.Print(%22 %22) //%0A%09%09%09%7D%0A\n %09%09%09f\n@@ -763,22 +763,16 @@\n tidas%0A%09%09\n-%7D%0A%09%7D%0A%0A\n %09if acho\n@@ -769,37 +769,30 @@\n %09%09%09if achou \n-== false \n %7B%0A%09%09\n+%09\n+%09\n fmt.Print(%22N\n@@ -786,27 +786,39 @@\n %09fmt.Print(%22\n-N\n+ \n %22)\n+ //%0A%09%09%09%7D%0A%09%09%7D\n %0A%09%7D%0A%0A%09achou \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-21_17-04-57",
+            "content": "@@ -883,17 +883,16 @@\n = 1; i %3C\n-=\n  qAlbum;\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-21_17-05-30",
+            "content": "@@ -814,42 +814,8 @@\n %09%7D%0A%0A\n-%09fmt.Println() //quebra de linha%0A%0A\n %09if \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-21_17-06-06",
+            "content": "@@ -1075,24 +1075,8 @@\n %09%7D%0A%0A\n-%09fmt.Println()%0A%0A\n %09if \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-21_17-06-40",
+            "content": "@@ -1067,18 +1067,20 @@\n ue%0A%0A%09%09%7D%0A\n-%0A\n %09\n+%7D%0A%0A\n %09fmt.Pri\n@@ -1087,20 +1087,16 @@\n ntln()%0A%0A\n-%09%7D%0A%0A\n %09if acho\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-21_17-07-19",
+            "content": "@@ -1069,19 +1069,16 @@\n %0A%0A%09%09%7D%0A%0A%09\n-%7D%0A%0A\n %09fmt.Pri\n@@ -1085,16 +1085,20 @@\n ntln()%0A%0A\n+%09%7D%0A%0A\n %09if acho\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-21_17-07-56",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t//ler a quantidade de figurinhas do album\n\tvar qAlbum int\n\tvar qTotal int\n\tfmt.Scan(&qAlbum)\n\tfmt.Scan(&qTotal)\n\t//em ordem crescente, ler as figurinhas do album\n\t//usar o for para ler as figurinhas do album\n\tvar contador [51]int //vetor que conta a quantidade repetida da figu\n\tfor i := 0; i < qTotal; i++ {\n\t\tvar fig int    //figurinha que est\u00e1 sendo lida\n\t\tfmt.Scan(&fig) //guarda a figurinha lida\n\t\t//saber quantas vezes a figurinha foi repetida\n\t\tcontador[fig]++\n\t}\n\n\t//imprimir as figurinhas repetidas\n\tachou := false //ainda n\u00e3o achou figurinhas repetidas\n\t//percorrer figurinhas do \u00e1lbum\n\tfor i := 1; i < qTotal; i++ {\n\t\tfor j := 1; j < contador[i]; j++ {\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \") //\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tachou = true //achou figurinhas repetidas\n\t\t}\n\t}\n\n\tfmt.Println() //quebra de linha\n\n\tif achou == false {\n\t\tfmt.Print(\"N\")\n\t}\n\n\tachou = false\n\tfor i := 1; i <= qAlbum; i++ {\n\t\tif contador[i] == 0 { // quando a fig n\u00e3o foi encontrada\n\t\t\tif achou {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tachou = true\n\n\t\t}\n\n\t}\n\n\tfmt.Println()\n\n\tif achou == false {\n\t\tfmt.Print(\"N\")\n\t}\n}\n",
+            "lines": "58"
+        }
+    ]
+}

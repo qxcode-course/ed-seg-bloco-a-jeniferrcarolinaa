@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-22_14-35-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar Q int\n\tvar D string\n\tfmt.Scan(&Q, &D)\n\t//ler posi\u00e7\u00f5es x e y\n\tvar x, y int\n\tfor i := 0; i < Q; i++ {\n\t\tfmt.Scan(&x, &y)\n\t\t//a depender da dire\u00e7\u00e3o D, calcular a nova posi\u00e7\u00e3o\n\t\tswitch D {\n\t\tcase \"L\":\n\t\t\tx--\n\t\tcase \"R\":\n\t\t\tx++\n\t\tcase \"U\":\n\t\t\ty++\n\t\tcase \"D\":\n\t\t\ty--\n\t\t}\n\n\t\tfmt.Println(x, y)\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

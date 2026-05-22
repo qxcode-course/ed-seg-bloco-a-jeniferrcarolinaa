@@ -13,9 +13,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@basic
-- sandbox@sandbox
 - ed@map_set
+- sandbox@sandbox
+- ed@basic
 flags:
   inbox: all
   panel: graph
@@ -23,5 +23,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@mumia
-selected_index: 4
+selected: ed@gomos
+selected_index: 9

@@ -36,6 +36,17 @@ func main() {
 		}
 	}
 
+	//quem morre é o elemento na posição depois da pessoa com a espada
+	//morto := pos + 1
+	//sabendo que a fila é circular, se o morto = N, volta pro início
+	morto := (pos + 1) % len(pessoas) // pessoas restantes
+	//retirar o morto da lista de pessoas
+	//manter tudo antes do morto e juntar com tudo depois do morto
+	//pegar o slice de pessoas antes do morto
+	aMorto := pessoas[:morto]
+	//pegar o slice de pessoas depois do morto
+	dMorto := pessoas[morto+1:]
+
 	fmt.Printf("]\n")
 
 }

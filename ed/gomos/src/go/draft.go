@@ -14,7 +14,7 @@ func main() {
 		switch D {
 		case "L":
 			x--
-			if Q%2 != 0 {
+			if Q%2 != 0 && Q > 1 {
 				y--
 				x++
 			}

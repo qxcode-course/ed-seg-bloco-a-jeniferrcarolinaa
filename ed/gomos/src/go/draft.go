@@ -14,6 +14,10 @@ func main() {
 		switch D {
 		case "L":
 			x--
+			if Q%2 != 0 {
+				y--
+				x++
+			}
 		case "R":
 			x++
 		case "U":

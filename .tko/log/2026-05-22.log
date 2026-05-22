@@ -2,3 +2,8 @@
 2026-05-22 14:19:38, MOVE, v:1, k:ed@gomos, mode:PICK
 2026-05-22 14:19:57, MOVE, v:1, k:ed@baruel, mode:EDIT
 2026-05-22 14:35:00, EXEC, v:1, k:ed@gomos, mode:FULL, rate:0, size:27
+2026-05-22 14:36:44, EXEC, v:1, k:ed@gomos, mode:FULL, rate:33
+2026-05-22 14:34:53, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-05-22 14:36:44, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-05-22 14:36:23, MOVE, v:1, k:ed@baruel, mode:EDIT
+2026-05-22 14:45:17, EXEC, v:1, k:ed@gomos, mode:FULL, rate:0, size:31

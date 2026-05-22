@@ -8,7 +8,6 @@ func imprimir(pessoas []int, pos int) {
 
 	// preencher o vetor de pessoas
 	for i := 0; i < len(pessoas); i++ {
-		pessoas[i] = i + 1 // pessoa 1 no i 0, pessoa 2 no i 1, etc
 		//quem está com a espada?
 		if pos == i { //se a posição da pessoa for igual ao índice, ela tem a espada
 			fmt.Printf("%d>", pessoas[i])
@@ -38,6 +37,10 @@ func main() {
 	//pos:= E-1
 	//precisamos de um vetor para guardar as pessoas
 	var pessoas = make([]int, N) // este é o slice de pessoas (tipo int) com tamanho/capacidade N
+	for i := 0; i < N; i++ {
+		pessoas[i] = i + 1 // pessoa 1 no i 0, pessoa 2 no i 1, etc
+	}
+
 	pos := E - 1
 
 	//enquanto houver mais de uma pessoa viva, o processo continua

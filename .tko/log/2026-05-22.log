@@ -17,3 +17,20 @@
 2026-05-22 14:50:31, MOVE, v:1, k:ed@gomos, mode:EDIT
 2026-05-22 14:59:55, MOVE, v:1, k:ed@gomos, mode:EDIT
 2026-05-22 15:07:35, EXEC, v:1, k:ed@gomos, mode:FULL, rate:0, size:39
+2026-05-22 15:08:08, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100
+2026-05-22 15:08:16, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-05-22 15:07:01, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-05-22 15:08:08, MOVE, v:1, k:ed@gomos, mode:EDIT
+2026-05-22 15:08:54, SELF, v:1, k:ed@gomos, self:1, rate:100, study:40, concept:1, debug:1
+2026-05-22 16:04:36, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-05-22 16:04:36, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 16:04:36, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 16:07:12, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 16:07:09, MOVE, v:1, k:ed@baruel, mode:EDIT
+2026-05-22 16:57:33, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 16:58:51, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 17:03:37, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 17:13:34, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 17:13:34, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 17:13:34, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 17:13:51, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:41

@@ -7,8 +7,18 @@
         },
         {
             "label": "2026-05-22_14-45-17",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar Q int\n\tvar D string\n\tfmt.Scan(&Q, &D)\n\t//ler posi\u00e7\u00f5es x e y\n\tvar x, y int\n\tfor i := 0; i < Q; i++ {\n\t\tfmt.Scan(&x, &y)\n\t\t//a depender da dire\u00e7\u00e3o D, calcular a nova posi\u00e7\u00e3o\n\t\tswitch D {\n\t\tcase \"L\":\n\t\t\tx--\n\t\t\tif Q%2 != 0 {\n\t\t\t\ty--\n\t\t\t\tx++\n\t\t\t}\n\t\tcase \"R\":\n\t\t\tx++\n\t\tcase \"U\":\n\t\t\ty++\n\t\tcase \"D\":\n\t\t\ty--\n\t\t}\n\n\t\tfmt.Println(x, y)\n\t}\n}\n",
+            "content": "@@ -263,17 +263,8 @@\n = 0 \n-&& Q %3E 1 \n %7B%0A%09%09\n",
             "lines": "31"
+        },
+        {
+            "label": "2026-05-22_14-47-10",
+            "content": "@@ -244,16 +244,63 @@\n %0A%09%09%09x--%0A\n+%09%09%09if Q%252 != 0 && Q %3E 1 %7B%0A%09%09%09%09y--%0A%09%09%09%09x++%0A%09%09%09%7D%0A\n %09%09case %22\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-22_14-47-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar Q int\n\tvar D string\n\tfmt.Scan(&Q, &D)\n\t//ler posi\u00e7\u00f5es x e y\n\tvar x, y int\n\tfor i := 0; i < Q; i++ {\n\t\tfmt.Scan(&x, &y)\n\t\t//a depender da dire\u00e7\u00e3o D, calcular a nova posi\u00e7\u00e3o\n\t\tswitch D {\n\t\tcase \"L\":\n\t\t\tx--\n\t\tcase \"R\":\n\t\t\tx++\n\t\tcase \"U\":\n\t\t\ty++\n\t\tcase \"D\":\n\t\t\ty--\n\t\t}\n\n\t\tfmt.Println(x, y)\n\t}\n}\n",
+            "lines": "27"
         }
     ]
 }

@@ -43,9 +43,16 @@ func main() {
 	//retirar o morto da lista de pessoas
 	//manter tudo antes do morto e juntar com tudo depois do morto
 	//pegar o slice de pessoas antes do morto
-	aMorto := pessoas[:morto]
+	//aMorto := pessoas[:morto]
 	//pegar o slice de pessoas depois do morto
-	dMorto := pessoas[morto+1:]
+	//dMorto := pessoas[morto+1:]
+	//juntar os dois slices
+	//pessoas = append(aMorto, dMorto...)
+	pessoas = append(pessoas[:morto], pessoas[morto+1:]...) //append junta os dois slices
+	//o ... é pra desagrupar o slice dMorto, adicionando elemento por elemento
+	//para quem é transferida a espada?
+	//para a pessoa que agora ocupa a posição que era do morto
+	pos = morto % len(pessoas)
 
 	fmt.Printf("]\n")
 

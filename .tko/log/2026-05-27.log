@@ -25,3 +25,17 @@
 2026-05-27 15:04:27, MOVE, v:1, k:ed@especiais, mode:PICK
 2026-05-27 15:08:27, MOVE, v:1, k:ed@apagando, mode:PICK
 2026-05-27 15:08:44, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0
+2026-05-27 15:09:43, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100, size:54
+2026-05-27 15:09:49, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-27 15:10:11, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-05-27 15:10:36, SELF, v:1, k:ed@apagando, self:1, rate:100, study:60, concept:1, refactor:1
+2026-05-27 15:10:38, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-27 15:10:50, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-27 15:11:46, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-27 15:09:42, MOVE, v:1, k:ed@apagando, mode:EDIT
+2026-05-27 15:09:10, MOVE, v:1, k:ed@apagando, mode:EDIT
+2026-05-27 16:16:20, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-27 16:16:20, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-27 16:16:20, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-27 16:16:35, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-27 16:35:59, MOVE, v:1, k:ed@especiais, mode:BACK

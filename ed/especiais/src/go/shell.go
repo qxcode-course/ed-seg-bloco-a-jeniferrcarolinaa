@@ -13,27 +13,35 @@ type Pair struct {
 	Two int
 }
 
-func occurr(vet []int) []Pair {
+func occurr(vet []int) []Pair { //quantas vezes o nível de stress aparece // deve contar em valor absoluto
+	// fazer um map para (1,2) -> nível,quantidade
+	ocorrencia := make(map[int]int)
 	_ = vet
 	return nil
 }
 
-func teams(vet []int) []Pair {
+func teams(vet []int) []Pair { //o nivel x tem y pessoas
+	//(5,2) -> nivel 5 tem 2 pessoas
 	_ = vet
 	return nil
 }
 
 func mnext(vet []int) []int {
+	//se tem mulher como vizinha, retorna 1, senão, retorna 0
+	//se a posição for de mulher, retorna 0
 	_ = vet
 	return nil
 }
 
 func alone(vet []int) []int {
+	//se tem vizinha, retorna 0, senão, retorna 1
+	//se a posição for de mulher, retorna 0
 	_ = vet
 	return nil
 }
 
 func couple(vet []int) int {
+	//homem e mulher com o mesmo nível de stress são casal
 	_ = vet
 	return 0
 }

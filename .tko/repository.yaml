@@ -13,14 +13,14 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@backtrack
-- ed@list
-- ed@bfs
 - ed@map_set
+- ed@backtrack
 - ed@rec
-- ed@dfs
 - ed@vector
 - ed@basic
+- ed@dfs
+- ed@list
+- ed@bfs
 - ed@linear
 flags:
   inbox: all

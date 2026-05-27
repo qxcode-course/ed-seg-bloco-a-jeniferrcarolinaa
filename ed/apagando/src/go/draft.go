@@ -49,4 +49,6 @@ func main() {
 		fmt.Printf("%d ", ficaram[i])
 	}
 
+	fmt.Println()
+
 }

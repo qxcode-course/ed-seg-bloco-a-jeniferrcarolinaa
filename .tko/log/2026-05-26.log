@@ -1,0 +1,46 @@
+2026-05-26 14:18:50, MOVE, v:1, k:ed@especiais, mode:DOWN
+2026-05-26 14:18:55, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-26 14:20:27, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-26 14:20:31, MOVE, v:1, k:ed@buscas, mode:DOWN
+2026-05-26 14:20:34, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-05-26 14:18:12, MOVE, v:1, k:ed@apagando, mode:EDIT
+2026-05-26 14:18:16, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-26 14:18:50, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 14:18:50, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 14:18:50, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 14:20:31, MOVE, v:1, k:ed@buscas, mode:EDIT
+2026-05-26 14:20:31, MOVE, v:1, k:ed@buscas, mode:EDIT
+2026-05-26 14:20:31, MOVE, v:1, k:ed@buscas, mode:EDIT
+2026-05-26 14:21:06, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-05-26 14:21:08, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-26 14:21:20, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-26 14:21:54, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-26 14:22:05, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 14:22:05, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 15:32:00, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-26 15:45:19, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-05-26 15:45:31, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100
+2026-05-26 15:45:38, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-05-26 15:46:33, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-05-26 16:01:33, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-26 16:01:33, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 16:01:33, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-05-26 16:14:26, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-26 16:15:20, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-26 16:15:25, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-26 16:18:31, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-26 16:18:52, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-05-26 16:18:57, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-05-26 16:18:57, MOVE, v:1, k:ed@apagando, mode:EDIT
+2026-05-26 16:18:57, MOVE, v:1, k:ed@apagando, mode:EDIT
+2026-05-26 16:19:10, MOVE, v:1, k:ed@apagando, mode:EDIT
+2026-05-26 16:25:40, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-26 16:45:19, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-05-26 16:45:32, EXEC, v:1, k:ed@apagando, mode:FULL, size:16, fail:COMP
+2026-05-26 16:45:44, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-26 16:46:27, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-05-26 16:46:41, EXEC, v:1, k:ed@apagando, mode:FULL, fail:COMP
+2026-05-26 16:47:15, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-26 16:47:18, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-05-26 16:56:49, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-26 16:55:12, MOVE, v:1, k:ed@apagando, mode:EDIT

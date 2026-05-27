@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_16-45-32",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t//quantidade de pessoas\n\tvar N int\n\tfmt.Scan(&N)\n\t//identificador de cada um\n\tvar id []int\n\t//cada pessoa tem um id\n\t//cada N, um id armazenado em uma lista\n\tfor i := 0; i < N; i++ {\n\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}

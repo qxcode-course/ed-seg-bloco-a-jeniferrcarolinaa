@@ -53,3 +53,5 @@
 2026-05-22 18:55:57, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100
 2026-05-22 18:55:20, MOVE, v:1, k:ed@princesa, mode:EDIT
 2026-05-22 18:55:57, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-22 19:03:46, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-05-22 19:04:27, SELF, v:1, k:ed@princesa, self:1, rate:100, study:140, concept:1, debug:1, refactor:1

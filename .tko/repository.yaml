@@ -14,8 +14,14 @@ sources:
   quests: null
 expanded:
 - ed@map_set
-- sandbox@sandbox
+- ed@dfs
+- ed@backtrack
+- ed@vector
 - ed@basic
+- ed@list
+- ed@bfs
+- ed@linear
+- ed@rec
 flags:
   inbox: all
   panel: graph
@@ -23,5 +29,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@princesa
-selected_index: 12
+selected: ed@manipulacao
+selected_index: 13

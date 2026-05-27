@@ -5,7 +5,7 @@ matricula: "Digite sua matrícula aqui por obséquio"
 ---
 # Instalando o TKO e configurando o repositório
 
-## Vou programar no meu setup local
+## Vou programar no meu setup local <!-- @vou-programar-no-meu-setup-local deps=none factor=1 xpgoal=0 active=1 -->
 
 - Se for a primeira configuração
   - Instale git, python, ide(vscode), compiladores
@@ -16,7 +16,7 @@ matricula: "Digite sua matrícula aqui por obséquio"
   - Instale o tko
     - `pipx install tko`
 
-## Vou programar no Codespace
+## Vou programar no Codespace <!-- @vou-programar-no-codespace deps=none factor=1 xpgoal=0 active=1 -->
 
 ```bash
 # instalando o tko e extensões úteis
@@ -25,7 +25,7 @@ matricula: "Digite sua matrícula aqui por obséquio"
 ./setup.sh
 ```
 
-## Configurando o repositório do TKO
+## Configurando o repositório do TKO <!-- @configurando-o-repositório-do-tko deps=none factor=1 xpgoal=0 active=1 -->
 
 ```bash
 # Se está com uma instalação antiga do tko,
@@ -37,7 +37,7 @@ tko init -f tasks -l py -r poo
 tko open tasks
 ```
 
-## Comandos do bash
+## Comandos do bash <!-- @comandos-do-bash deps=none factor=1 xpgoal=0 active=1 -->
 
 - `cd <pasta>` para mudar de pasta
 - `ls` para mostrar o conteúdo da pasta
@@ -46,7 +46,7 @@ tko open tasks
 - `control c` para matar um programa do terminal
 - `control d` para matar o terminal
 
-## Comandos do Git
+## Comandos do Git <!-- @comandos-do-git deps=none factor=1 xpgoal=0 active=1 -->
 
 - `git add <arquivo>`: Adiciona um arquivo ao stage
 - `git add .`: Adiciona todos os arquivos ao stage
@@ -57,14 +57,14 @@ tko open tasks
 - `git log`: Mostra o histórico de commits
 - `git clone <url>`: Clona um repositório remoto para uma pasta local
 
-## Git pela interface do vscode
+## Git pela interface do vscode <!-- @git-pela-interface-do-vscode deps=none factor=1 xpgoal=0 active=1 -->
 
 - Escolha a aba do `Source Control` ou `Control Shift G`
 - Clique no + para `stage all changes`, ou seja, marcar tudo pra ser salvo.
 - Escreva a mensagem no campo do commit e clique em `Commit` para salvar a versão na máquina virtual.
 - Clique em `Sync Changes` para enviar pro site.
 
-## Resolvendo Conflitos
+## Resolvendo Conflitos <!-- @resolvendo-conflitos deps=none factor=1 xpgoal=0 active=1 -->
 
 - **Antes de começar a trabalhar**, atualize o repositório:
   - `git pull --ff-only`
@@ -79,7 +79,7 @@ tko open tasks
     - `git commit -m mensagem`
     - `git push`
 
-## sandbox
+## sandbox <!-- @sandbox deps=none factor=1 xpgoal=0 active=1 -->
 
-- [ ]`@user_001 `[estore .tko/repository.yaml](base\user_001\README.md)
+- [ ] `@user_001 🛠️ 👤 type=make xp=1 tier=1 loss=part :self` [estore .tko/repository.yaml](base\user_001\README.md)
 

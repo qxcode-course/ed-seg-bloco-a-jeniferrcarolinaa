@@ -8,18 +8,36 @@ import (
 	"strings"
 )
 
+// type Pair struct {
+// 	One int//começa com letra maiuscula para ser usada fora do pacote
+// 	Two int
+// }
+
 type Pair struct {
 	One int
 	Two int
 }
 
-func occurr(vet []int) []Pair { //quantas vezes o nível de stress aparece // deve contar em valor absoluto
-	// fazer um map para (1,2) -> nível,quantidade
-	ocorrencia := make(map[int]int)
-	_ = vet
-	return nil
+// func occurr(vet []int) []Pair { //quantas vezes o nível de stress aparece // deve contar em valor absoluto
+// 	// fazer um map para (1,2) -> nível,quantidade
+// 	ocorrencia := make(map[int]int)
+// 	_ = vet
+// 	return nil
+// }
+
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
 }
 
+func occurr(vet []int) []Pair { //criando uma função (func) que se chama occurr//
+	//recebe um parâmetro chamado vet do tipo slice de int
+	//precisa devolver um valor do tipo slice (lista) de Pair
+	//precisa de abs, pra contar o numero que aquele nivel aparece independente se é homem ou mulher
+
+}
 func teams(vet []int) []Pair { //o nivel x tem y pessoas
 	//(5,2) -> nivel 5 tem 2 pessoas
 	_ = vet
@@ -54,18 +72,22 @@ func hasSubseq(vet []int, seq []int, pos int) bool {
 }
 
 func subseq(vet []int, seq []int) int {
+	//tem que retorna o indice(pos) onde começa a sequencia procurada
+	//se n houver, retorna -1
 	_ = vet
 	_ = seq
 	return -1
 }
 
 func erase(vet []int, posList []int) []int {
+	//remover pelo indice com erase[] elemento a ser removido
 	_ = vet
 	_ = posList
 	return nil
 }
 
 func clear(vet []int, value int) []int {
+	//remove pelo valor com clear[] valor a ser removido
 	_ = vet
 	_ = value
 	return nil

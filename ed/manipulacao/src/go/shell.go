@@ -8,6 +8,13 @@ import (
 	"strings"
 )
 
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+
+	return x
+}
 func getMen(vet []int) []int {
 	//criar um vetor para armazenar homens
 	var men []int
@@ -24,8 +31,21 @@ func getMen(vet []int) []int {
 }
 
 func getCalmWomen(vet []int) []int {
-	_ = vet
-	return nil
+	// criar um vetor pra armazenar calm women
+	var calmWomen []int
+	//ler vetor de entrada
+	for i := 0; i < len(vet); i++ {
+		//o elemento é negativo?
+		//nivel de stress < 10?
+		//vou ter que fazer uma função abs pra ver o nivel absoluto de stress
+		if vet[i] < 0 {
+			if abs(vet[i]) < 10 {
+				calmWomen = append(calmWomen, vet[i])
+			}
+		}
+	}
+
+	return calmWomen
 }
 
 func sortVet(vet []int) []int {

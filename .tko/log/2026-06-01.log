@@ -1,3 +1,30 @@
 2026-06-01 14:32:51, MOVE, v:1, k:ed@especiais, mode:PICK
 2026-06-01 14:32:51, MOVE, v:1, k:ed@especiais, mode:EDIT
 2026-06-01 14:32:51, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-06-01 15:06:11, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-06-01 15:07:23, EXEC, v:1, k:ed@especiais, mode:FULL, rate:0, size:178
+2026-06-01 15:07:25, EXEC, v:1, k:ed@especiais, mode:FULL, rate:0
+2026-06-01 15:07:25, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-06-01 15:13:16, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-06-01 15:54:26, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-06-01 15:54:26, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-06-01 15:54:26, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-06-01 16:01:34, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-06-01 16:11:20, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-06-01 16:10:16, MOVE, v:1, k:ed@especiais, mode:EDIT
+2026-06-01 16:11:20, MOVE, v:1, k:sandbox@user_001, mode:EDIT
+2026-06-01 16:11:23, MOVE, v:1, k:sandbox@user_001, mode:EDIT
+2026-06-01 16:11:32, MOVE, v:1, k:sandbox@user_001, mode:EDIT
+2026-06-01 16:11:35, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0, size:5
+2026-06-01 16:11:44, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-06-01 16:11:35, MOVE, v:1, k:sandbox@user_001, mode:EDIT
+2026-06-01 16:24:02, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-06-01 16:25:56, MOVE, v:1, k:ed@especiais, mode:BACK
+2026-06-01 16:26:32, MOVE, v:1, k:ed@manipulacao, mode:DOWN
+2026-06-01 16:26:32, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-06-01 16:26:32, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-06-01 16:26:32, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-06-01 16:26:41, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-06-01 16:26:43, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-06-01 16:26:44, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-06-01 16:27:02, MOVE, v:1, k:ed@especiais, mode:EDIT

@@ -15,13 +15,6 @@ sources:
 expanded:
 - ed@map_set
 - ed@rec
-- ed@vector
-- ed@backtrack
-- ed@bfs
-- ed@basic
-- ed@linear
-- ed@list
-- ed@dfs
 flags:
   inbox: all
   panel: graph
@@ -29,5 +22,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@buscas
-selected_index: 15
+selected: ed@especiais
+selected_index: 7

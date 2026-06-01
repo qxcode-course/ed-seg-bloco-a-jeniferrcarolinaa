@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// type Pair struct {
+// type Pair struct {1
 // 	One int//começa com letra maiuscula para ser usada fora do pacote
 // 	Two int
 // }

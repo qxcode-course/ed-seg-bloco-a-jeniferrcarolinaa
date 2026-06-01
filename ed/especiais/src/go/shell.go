@@ -36,7 +36,23 @@ func occurr(vet []int) []Pair { //criando uma função (func) que se chama occur
 	//recebe um parâmetro chamado vet do tipo slice de int
 	//precisa devolver um valor do tipo slice (lista) de Pair
 	//precisa de abs, pra contar o numero que aquele nivel aparece independente se é homem ou mulher
+	cont := make(map[int]int) //para contar quantas vezes cada nivel de stress aparece
+	for i := 0; i < len(vet); i++ {
 
+		stress := abs(vet[i])
+		cont[stress]++
+
+	}
+
+	var pares []Pair //slice para atmazenar os pares
+	//loop para criar os pares a partir do cont
+	for stress := 0; stress < len(cont); stress++ {
+		if cont[stress] > 0 {
+			pares = append(pares, Pair{One: stress, Two: cont[stress]})
+		}
+	}
+
+	return pares
 }
 func teams(vet []int) []Pair { //o nivel x tem y pessoas
 	//(5,2) -> nivel 5 tem 2 pessoas

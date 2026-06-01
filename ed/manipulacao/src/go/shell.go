@@ -48,9 +48,26 @@ func getCalmWomen(vet []int) []int {
 	return calmWomen
 }
 
-func sortVet(vet []int) []int {
-	_ = vet
-	return nil
+func sortVet(vet []int) []int { // uma lista de inteiros devolve  a mesma lista de inteiros, mas ordenada
+	//imprimir a lista dada em ordem crescente
+	//fazer bubble sort
+
+	for i := 0; i < len(vet); i++ {
+		//comparar o atual com o proximo
+		for j := i + 1; j < len(vet); j++ {
+			//se o atual eh maior que o proximo, trocar de lugar
+			if vet[i] > vet[j] {
+				//guardar atual em uma var temporaria
+				temporaria := vet[i]
+				//colocar o proximo no lugar do atual
+				vet[i] = vet[j]
+				vet[j] = temporaria
+			}
+		}
+	}
+
+	return vet
+
 }
 
 func sortStress(vet []int) []int {

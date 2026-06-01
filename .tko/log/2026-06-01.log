@@ -36,3 +36,6 @@
 2026-06-01 16:49:27, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:28, size:135
 2026-06-01 16:49:14, MOVE, v:1, k:ed@manipulacao, mode:EDIT
 2026-06-01 16:49:27, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-06-01 17:03:23, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:42, size:152
+2026-06-01 17:04:29, MOVE, v:1, k:ed@manipulacao, mode:BACK
+2026-06-01 17:07:02, MOVE, v:1, k:ed@manipulacao, mode:PICK

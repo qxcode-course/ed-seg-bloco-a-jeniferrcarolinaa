@@ -71,8 +71,19 @@ func sortVet(vet []int) []int { // uma lista de inteiros devolve  a mesma lista 
 }
 
 func sortStress(vet []int) []int {
-	_ = vet
-	return nil
+	//ordenar a lista de acordo com nivel d stress, usar a funcao abs pra comparar cada elemento (sinal n importa)
+	for i := 0; i < len(vet); i++ {
+		for j := i + 1; j < len(vet); j++ {
+			if abs(vet[i]) > abs(vet[j]) {
+				//fazer a mesma coisa do bubble
+				temporaria := vet[i]
+				vet[i] = vet[j]
+				vet[j] = temporaria
+			}
+		}
+	}
+
+	return vet
 }
 
 func reverse(vet []int) []int {

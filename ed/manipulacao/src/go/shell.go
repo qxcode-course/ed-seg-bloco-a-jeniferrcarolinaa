@@ -90,26 +90,28 @@ func reverse(vet []int) []int { //do maior para o menor
 	//bublle sort invertido
 	//o usuário dá a lista a ser invertida
 	//imprimo a mesma lista, e depois imprimo novamente, só que do maior pro menor
-	var mesmaLista []int
-	for i := 0; i < len(vet); i++ {
-		mesmaLista = append(mesmaLista, vet[i])
-	}
-
-	println(mesmaLista)
 	//ordenar a lista do maior pro menor
-	for i := 0; i < len(vet); i++ {
-		for j := i + 1; j < len(vet); j++ {
-			//imprimir a lista primeiro
-			if vet[i] < vet[j] {
-				temporaria := vet[i]
-				vet[i] = vet[j]
-				vet[j] = temporaria
+	// for i := 0; i < len(vet); i++ {
+	// 	for j := i + 1; j < len(vet); j++ {
+	// 		//imprimir a lista primeiro
+	// 		if vet[i] < vet[j] {
+	// 			temporaria := vet[i]
+	// 			vet[i] = vet[j]
+	// 			vet[j] = temporaria
 
-			}
-		}
+	// 		}
+	// 	}
+	// }
+
+	//return vet
+
+	//tem que começar do ultimo elemento ao primeiro, é para inverter a ordem, não ordenar
+	var invertido []int
+	for i := len(vet) - 1; i >= 0; i-- {
+		invertido = append(invertido, vet[i])
 	}
 
-	return vet
+	return invertido
 }
 
 func unique(vet []int) []int {

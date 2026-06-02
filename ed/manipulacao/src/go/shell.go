@@ -90,6 +90,8 @@ func reverse(vet []int) []int { //do maior para o menor
 	//bublle sort invertido
 	for i := 0; i < len(vet); i++ {
 		for j := i + 1; j < len(vet); j++ {
+			//imprimir a lista primeiro
+			println(vet)
 			if vet[i] < vet[j] {
 				temporaria := vet[i]
 				vet[i] = vet[j]

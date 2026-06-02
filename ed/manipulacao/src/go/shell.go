@@ -167,7 +167,10 @@ func repeated(vet []int) []int {
 			}
 		}
 	}
-	return repetidos
+
+	//ah, map n tem ordem, percorrer a lista de repetidos e ordenar
+
+	return sortVet(repetidos)
 	//foda!!!, tem que ser repetidos -1, testes indicam
 
 }

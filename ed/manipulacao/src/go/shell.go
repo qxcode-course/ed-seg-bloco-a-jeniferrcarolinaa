@@ -88,8 +88,8 @@ func sortStress(vet []int) []int {
 
 func reverse(vet []int) []int { //do maior para o menor
 	//bublle sort invertido
+	println(vet)
 	for i := 0; i < len(vet); i++ {
-		println(vet)
 		for j := i + 1; j < len(vet); j++ {
 			//imprimir a lista primeiro
 			if vet[i] < vet[j] {

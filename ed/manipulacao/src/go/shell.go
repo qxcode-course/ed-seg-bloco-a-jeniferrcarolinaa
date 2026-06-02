@@ -86,9 +86,20 @@ func sortStress(vet []int) []int {
 	return vet
 }
 
-func reverse(vet []int) []int {
-	_ = vet
-	return nil
+func reverse(vet []int) []int { //do maior para o menor
+	//bublle sort invertido
+	for i := 0; i < len(vet); i++ {
+		for j := i + 1; j < len(vet); j++ {
+			if vet[i] < vet[j] {
+				temporaria := vet[i]
+				vet[i] = vet[j]
+				vet[j] = temporaria
+
+			}
+		}
+	}
+
+	return vet
 }
 
 func unique(vet []int) []int {

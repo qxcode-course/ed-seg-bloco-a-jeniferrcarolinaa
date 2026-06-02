@@ -13,14 +13,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@map_set
 - ed@rec
+- ed@map_set
+- ed@basic
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
 selected: ed@manipulacao
-selected_index: 6
+selected_index: 13

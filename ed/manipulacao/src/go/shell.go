@@ -115,8 +115,24 @@ func reverse(vet []int) []int { //do maior para o menor
 }
 
 func unique(vet []int) []int {
-	_ = vet
-	return nil
+	//retornar uma nova lista sem repetição de valores
+	//colocar oselementos que se repetem em um map
+	vistos := make(map[int]bool)
+	var unicos []int
+	//para cada elemento, verficar se já existe (no map)
+	for i := 0; i < len(vet); i++ {
+		//se não apareceu ainda, colocar na lista nova e depois indicar como visto
+		//sabendo que o map de repetidos tem inteiros que retornam true ou false (booleano):
+		if !vistos[vet[i]] {
+			unicos = append(unicos, vet[i])
+			vistos[vet[i]] = true
+		}
+
+		//se já apareceu, ignora
+	}
+
+	return unicos
+
 }
 
 func repeated(vet []int) []int {

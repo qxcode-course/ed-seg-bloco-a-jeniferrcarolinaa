@@ -148,14 +148,27 @@ func repeated(vet []int) []int {
 
 	var repetidos []int //lista de todas as repetições
 	//map n tem ordem, ent tem que percorrer de novo o map
-	for i := 0; i < len(vet); i++ {
-		//se apareceu mais de uma vez, colocar em repetidos
-		if contagem[vet[i]] > 1 {
-			repetidos = append(repetidos, vet[i])
+	// for i := 0; i < len(vet); i++ {
+	// 	//se apareceu mais de uma vez, colocar em repetidos
+	// 	if contagem[vet[i]] > 1 {
+	// 		repetidos = append(repetidos, vet[i])
+	// 	}
+	// }
+
+	//mudança de planos: tenho que percorrer o map, pegando a quantidade do valor que se repete e depois diminuir em uma unidade
+	//estrtutura para percoreer o map:
+	// for chave, valor := range contagem {
+
+	for valor, quantidade := range contagem {
+		if quantidade > 1 {
+			//percorrer a quantidade de vezes que o valor se repete na lista
+			for r := 0; r < quantidade-1; r++ {
+				repetidos = append(repetidos, valor)
+			}
 		}
 	}
-
 	return repetidos
+	//foda!!!, tem que ser repetidos -1, testes indicam
 
 }
 

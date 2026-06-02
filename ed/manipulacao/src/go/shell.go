@@ -136,8 +136,27 @@ func unique(vet []int) []int {
 }
 
 func repeated(vet []int) []int {
-	_ = vet
-	return nil
+	//retornar uma nova lista com os elementos que se repetem
+	//elemento x ja apareceu quatas vezes?
+	//map de inteiro que retorna um inteiro representante da quantidade de vezes q x apareceu
+	contagem := make(map[int]int)
+	//percorrer a lista dada
+	//incrementar a contagem de cada elemento sempre que ele aparece
+	for i := 0; i < len(vet); i++ {
+		contagem[vet[i]]++
+	}
+
+	var repetidos []int //lista de todas as repetições
+	//map n tem ordem, ent tem que percorrer de novo o map
+	for i := 0; i < len(vet); i++ {
+		//se apareceu mais de uma vez, colocar em repetidos
+		if contagem[vet[i]] > 1 {
+			repetidos = append(repetidos, vet[i])
+		}
+	}
+
+	return repetidos
+
 }
 
 func main() {

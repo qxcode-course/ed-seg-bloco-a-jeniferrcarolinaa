@@ -77,6 +77,33 @@ func (v *Vector) PushBack(value int) {
 	//aff, vou ter que criar outra função pra aumentar a capacidade do vetor
 }
 
+func (v *Vector) Get(index int) int {
+	return v.data[index] //elemento no indice/posição index
+	//preciso criar a função At
+}
+
+func (v *Vector) At(index int) (int, error) {
+	//func para verificar se o index é válido
+	if index < 0 || index >= v.size {
+		return 0, fmt.Errorf("index out of range") //0 é só pra compilar, tipo do return é o int
+	}
+
+	return v.Get(index), nil //o nil é a ausência de erro
+
+}
+
+// ainda falta o set pra passar no teste
+func (v *Vector) Set(index int, value int) error {
+	//fazer verificação
+	if index < 0 || index >= v.size {
+		return fmt.Errorf("index out of range")
+	}
+	//definir o valor no index especificado
+	v.data[index] = value
+	//sem erro
+	return nil
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -156,21 +183,21 @@ func main() {
 		case "capacity":
 			// fmt.Println(v.Capacity())
 		case "get":
-			// index, _ := strconv.Atoi(parts[1])
-			// value, err := v.At(index)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// } else {
-			// 	fmt.Println(value)
-			// }
+			index, _ := strconv.Atoi(parts[1])
+			value, err := v.At(index)
+			if err != nil {
+				fmt.Println(err)
+			} else {
+				fmt.Println(value)
+			}
 		case "set":
-			// index, _ := strconv.Atoi(parts[1])
-			// value, _ := strconv.Atoi(parts[2])
-			// err := v.Set(index, value)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// }
-			//
+			index, _ := strconv.Atoi(parts[1])
+			value, _ := strconv.Atoi(parts[2])
+			err := v.Set(index, value)
+			if err != nil {
+				fmt.Println(err)
+			}
+
 		case "reserve":
 			newCapacity, _ := strconv.Atoi(parts[1])
 			v.Reserve(newCapacity)

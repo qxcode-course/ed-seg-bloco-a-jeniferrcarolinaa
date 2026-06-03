@@ -37,7 +37,7 @@ func (v *Vector) String() string { // função se chama string, recebe um pontei
 
 	for i := 0; i < v.size; i++ {
 
-		if i < v.size-1 {
+		if i > 0 {
 			s += ", "
 		}
 		s += fmt.Sprintf("%d", v.data[i])
@@ -63,15 +63,14 @@ func (v *Vector) PushBack(value int) {
 	//se tiver, adicionar o elemento e aumenta o size
 	//não tendo, aumentar capacity com reserve e depois adicionar o elemento
 	//fazer verificação
-	if v.size < v.capacity {
+	if v.size == v.capacity {
 		//adicionar o elento no vetor v, na posição size
 		//value é o elemento a ser adicionado
-		v.data[v.size] = value
+		v.Reserve(v.capacity * 2)
 		//incrementar o size
-		v.size++
 	}
 	//não tendo capacidade, aumentar a capacidade do vetor
-	v.Reserve(v.capacity * 2)
+
 	//agr posso adicionar o elemento
 	v.data[v.size] = value
 	v.size++

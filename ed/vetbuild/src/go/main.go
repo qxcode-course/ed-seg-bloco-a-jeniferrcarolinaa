@@ -104,6 +104,13 @@ func (v *Vector) Set(index int, value int) error {
 	return nil
 }
 
+// func clear agr
+func (v *Vector) Clear() {
+	//limpar o vetor, é size 0
+	v.size = 0
+
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -179,7 +186,7 @@ func main() {
 			// 	fmt.Println("false")
 			// }
 		case "clear":
-			// v.Clear()
+			v.Clear()
 		case "capacity":
 			// fmt.Println(v.Capacity())
 		case "get":

@@ -13,15 +13,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@rec
-- ed@map_set
-- ed@basic
+- ed@vector
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@manipulacao
-selected_index: 13
+selected: ed@vetbuild
+selected_index: 6

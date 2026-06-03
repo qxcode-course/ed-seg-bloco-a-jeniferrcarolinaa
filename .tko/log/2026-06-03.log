@@ -1,0 +1,5 @@
+2026-06-03 00:00:17, MOVE, v:1, k:ed@vetbuild, mode:BACK
+2026-06-03 00:00:49, MOVE, v:1, k:ed@vetbuild, mode:PICK
+2026-06-03 00:00:53, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:18
+2026-06-03 00:03:30, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9, size:187
+2026-06-03 00:03:41, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:9

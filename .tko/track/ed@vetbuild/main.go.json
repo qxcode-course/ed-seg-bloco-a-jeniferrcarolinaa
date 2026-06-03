@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_22-29-00",
+            "content": "@@ -36,14 +36,8 @@\n mt%22%0A\n-%09%22os%22%0A\n %09%22st\n@@ -157,38 +157,8 @@\n r %7B%0A\n-%09//fun%C3%A7%C3%A3o para criar um vetor%0A\n %09ret\n@@ -177,16 +177,20 @@\n %0A%09%09data:\n+    \n  make(%5B%5D\n@@ -288,41 +288,8 @@\n ray%0A\n-%09%09//%C3%A9 assim que se cria um vetor%0A\n %09%09si\n@@ -331,179 +331,8 @@\n %0A%7D%0A%0A\n-// criar fun%C3%A7%C3%A3o status%0A// retorns o tamanho e a capacidade do vetor%0Afunc (v *Vector) Status() string %7B%0A%09return fmt.Sprintf(%22size: %25d, capacity: %25d%22, v.size, v.capacity)%0A%7D%0A\n %0Afun\n@@ -662,16 +662,17 @@\n in)%0A%0A%09//\n+ \n v := New\n@@ -2361,16 +2361,17 @@\n  %7D%0A%09%09%09//\n+ \n %0A%09%09case \n",
+            "lines": "130"
+        },
+        {
+            "label": "2026-06-02_22-29-39",
+            "content": "@@ -896,16 +896,18 @@\n tdin)%0A%0A%09\n+//\n v := New\n@@ -1370,24 +1370,27 @@\n  %22show%22:%0A%09%09%09\n+// \n fmt.Println(\n@@ -1408,24 +1408,27 @@\n status%22:%0A%09%09%09\n+// \n fmt.Println(\n",
+            "lines": "138"
+        },
+        {
+            "label": "2026-06-02_22-35-27",
+            "content": "@@ -521,18 +521,20 @@\n f(%22size:\n+ \n %25d\n+,\n  capacit\n",
+            "lines": "138"
+        },
+        {
+            "label": "2026-06-02_22-37-29",
+            "content": "@@ -533,16 +533,17 @@\n apacity:\n+ \n %25d%22, v.s\n",
+            "lines": "138"
+        },
+        {
+            "label": "2026-06-02_22-40-44",
+            "content": "@@ -42,19 +42,8 @@\n os%22%0A\n-%09%22strconv%22%0A\n %09%22st\n@@ -1161,16 +1161,19 @@\n it%22:%0A%09%09%09\n+// \n value, _\n@@ -1202,16 +1202,19 @@\n %5B1%5D)%0A%09%09%09\n+// \n v = NewV\n",
+            "lines": "138"
+        },
+        {
+            "label": "2026-06-02_22-42-59",
+            "content": "@@ -576,307 +576,8 @@\n %0A%7D%0A%0A\n-// criar fun%C3%A7%C3%A3o String pra imprimir o vetor%0Afunc (v *Vector) String() string %7B // fun%C3%A7%C3%A3o se chama string, recebe um ponteiroi Vector e devolve tipo string%0A%0A%09s := %22%5B%22%0A%0A%09for i := 0; i %3C v.size; i++ %7B%0A%0A%09%09if i %3C v.size-1 %7B%0A%09%09%09s += %22, %22%0A%09%09%7D%0A%09%09s += fmt.Sprintf(%22%25d%22, v.data%5Bi%5D)%0A%09%7D%0A%0A%09s += %22%5D%22%0A%09return s%0A%7D%0A%0A\n func\n",
+            "lines": "139"
+        },
+        {
+            "label": "2026-06-02_23-11-32",
+            "content": "@@ -875,947 +875,8 @@\n %0A%7D%0A%0A\n-// fun Reserve para aumentar a capacidade do vetor%0Afunc (v *Vector) Reserve(newCapacity int) %7B%0A%09newData := make(%5B%5Dint, newCapacity)%0A%09for i := 0; i %3C v.size; i++ %7B%0A%09%09newData%5Bi%5D = v.data%5Bi%5D%0A%09%7D%0A%09v.data = newData%0A%09v.capacity = newCapacity%0A%7D%0A%0A// pushBack para adicionar um elemento ao final do vetor%0Afunc (v *Vector) PushBack(value int) %7B%0A%09//o vetor tem capacidade pra adicionar o elemento?%0A%09//se tiver, adicionar o elemento e aumenta o size%0A%09//n%C3%A3o tendo, aumentar capacity com reserve e depois adicionar o elemento%0A%09//fazer verifica%C3%A7%C3%A3o%0A%09if v.size %3C v.capacity %7B%0A%09%09//adicionar o elento no vetor v, na posi%C3%A7%C3%A3o size%0A%09%09//value %C3%A9 o elemento a ser adicionado%0A%09%09v.data%5Bv.size%5D = value%0A%09%09//incrementar o size%0A%09%09v.size++%0A%09%7D%0A%09//n%C3%A3o tendo capacidade, aumentar a capacidade do vetor%0A%09v.Reserve(v.capacity * 2)%0A%09//agr posso adicionar o elemento%0A%09v.data%5Bv.size%5D = value%0A%09v.size++%0A%09//aff, vou ter que criar outra fun%C3%A7%C3%A3o pra aumentar a capacidade do vetor%0A%7D%0A%0A\n func\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-06-02_23-59-58",
+            "content": "@@ -2487,16 +2487,19 @@\n sh%22:%0A%09%09%09\n+// \n for _, p\n@@ -2526,16 +2526,19 @@\n :%5D %7B%0A%09%09%09\n+// \n %09value, \n@@ -2564,16 +2564,19 @@\n art)%0A%09%09%09\n+// \n %09v.PushB\n@@ -2589,16 +2589,19 @@\n lue)%0A%09%09%09\n+// \n %7D%0A%09%09case\n@@ -3850,16 +3850,19 @@\n ve%22:%0A%09%09%09\n+// \n newCapac\n@@ -3897,16 +3897,19 @@\n %5B1%5D)%0A%09%09%09\n+// \n v.Reserv\n",
+            "lines": "187"
+        },
+        {
+            "label": "2026-06-03_00-03-30",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Vector struct {\n\tdata     []int\n\tsize     int\n\tcapacity int\n}\n\nfunc NewVector(capacity int) *Vector {\n\t//fun\u00e7\u00e3o para criar um vetor\n\treturn &Vector{\n\t\tdata: make([]int, capacity), // nunca use len(data) ou cap(data) ou qq m\u00e9todo do go de manipula\u00e7\u00e3o de array\n\t\t//\u00e9 assim que se cria um vetor\n\t\tsize:     0,\n\t\tcapacity: capacity,\n\t}\n}\n\n// criar fun\u00e7\u00e3o status\n// retorns o tamanho e a capacidade do vetor\nfunc (v *Vector) Status() string {\n\treturn fmt.Sprintf(\"size:%d capacity:%d\", v.size, v.capacity)\n}\n\n// criar fun\u00e7\u00e3o String pra imprimir o vetor\nfunc (v *Vector) String() string { // fun\u00e7\u00e3o se chama string, recebe um ponteiroi Vector e devolve tipo string\n\n\ts := \"[\"\n\n\tfor i := 0; i < v.size; i++ {\n\n\t\tif i < v.size-1 {\n\t\t\ts += \", \"\n\t\t}\n\t\ts += fmt.Sprintf(\"%d\", v.data[i])\n\t}\n\n\ts += \"]\"\n\treturn s\n}\n\n// fun Reserve para aumentar a capacidade do vetor\nfunc (v *Vector) Reserve(newCapacity int) {\n\tnewData := make([]int, newCapacity)\n\tfor i := 0; i < v.size; i++ {\n\t\tnewData[i] = v.data[i]\n\t}\n\tv.data = newData\n\tv.capacity = newCapacity\n}\n\n// pushBack para adicionar um elemento ao final do vetor\nfunc (v *Vector) PushBack(value int) {\n\t//o vetor tem capacidade pra adicionar o elemento?\n\t//se tiver, adicionar o elemento e aumenta o size\n\t//n\u00e3o tendo, aumentar capacity com reserve e depois adicionar o elemento\n\t//fazer verifica\u00e7\u00e3o\n\tif v.size < v.capacity {\n\t\t//adicionar o elento no vetor v, na posi\u00e7\u00e3o size\n\t\t//value \u00e9 o elemento a ser adicionado\n\t\tv.data[v.size] = value\n\t\t//incrementar o size\n\t\tv.size++\n\t}\n\t//n\u00e3o tendo capacidade, aumentar a capacidade do vetor\n\tv.Reserve(v.capacity * 2)\n\t//agr posso adicionar o elemento\n\tv.data[v.size] = value\n\tv.size++\n\t//aff, vou ter que criar outra fun\u00e7\u00e3o pra aumentar a capacidade do vetor\n}\n\nfunc Join(slice []int, sep string) string {\n\tif len(slice) == 0 {\n\t\treturn \"\"\n\t}\n\tvar result strings.Builder\n\tfmt.Fprintf(&result, \"%d\", slice[0])\n\tfor _, value := range slice[1:] {\n\t\tfmt.Fprintf(&result, \"%s%d\", sep, value)\n\t}\n\treturn result.String()\n}\n\nfunc main() {\n\tvar line, cmd string\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tv := NewVector(0)\n\tfor {\n\t\tfmt.Print(\"$\")\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tline = scanner.Text()\n\t\tfmt.Println(line)\n\t\tparts := strings.Fields(line)\n\t\tif len(parts) == 0 {\n\t\t\tcontinue\n\t\t}\n\t\tcmd = parts[0]\n\n\t\tswitch cmd {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"init\":\n\t\t\tvalue, _ := strconv.Atoi(parts[1])\n\t\t\tv = NewVector(value)\n\t\tcase \"push\":\n\t\t\tfor _, part := range parts[1:] {\n\t\t\t\tvalue, _ := strconv.Atoi(part)\n\t\t\t\tv.PushBack(value)\n\t\t\t}\n\t\tcase \"show\":\n\t\t\tfmt.Println(v)\n\t\tcase \"status\":\n\t\t\tfmt.Println(v.Status())\n\t\tcase \"pop\":\n\t\t\t// err := v.PopBack()\n\t\t\t// if err != nil {\n\t\t\t// \tfmt.Println(err)\n\t\t\t// }\n\t\tcase \"insert\":\n\t\t\t// index, _ := strconv.Atoi(parts[1])\n\t\t\t// value, _ := strconv.Atoi(parts[2])\n\t\t\t// err := v.Insert(index, value)\n\t\t\t// if err != nil {\n\t\t\t// \tfmt.Println(err)\n\t\t\t// }\n\t\tcase \"erase\":\n\t\t\t// index, _ := strconv.Atoi(parts[1])\n\t\t\t// err := v.Erase(index)\n\t\t\t// if err != nil {\n\t\t\t// \tfmt.Println(err)\n\t\t\t// }\n\t\tcase \"indexOf\":\n\t\t\t// value, _ := strconv.Atoi(parts[1])\n\t\t\t// index := v.IndexOf(value)\n\t\t\t// fmt.Println(index)\n\t\tcase \"contains\":\n\t\t\t// value, _ := strconv.Atoi(parts[1])\n\t\t\t// if v.Contains(value) {\n\t\t\t// \tfmt.Println(\"true\")\n\t\t\t// } else {\n\t\t\t// \tfmt.Println(\"false\")\n\t\t\t// }\n\t\tcase \"clear\":\n\t\t\t// v.Clear()\n\t\tcase \"capacity\":\n\t\t\t// fmt.Println(v.Capacity())\n\t\tcase \"get\":\n\t\t\t// index, _ := strconv.Atoi(parts[1])\n\t\t\t// value, err := v.At(index)\n\t\t\t// if err != nil {\n\t\t\t// \tfmt.Println(err)\n\t\t\t// } else {\n\t\t\t// \tfmt.Println(value)\n\t\t\t// }\n\t\tcase \"set\":\n\t\t\t// index, _ := strconv.Atoi(parts[1])\n\t\t\t// value, _ := strconv.Atoi(parts[2])\n\t\t\t// err := v.Set(index, value)\n\t\t\t// if err != nil {\n\t\t\t// \tfmt.Println(err)\n\t\t\t// }\n\t\t\t//\n\t\tcase \"reserve\":\n\t\t\tnewCapacity, _ := strconv.Atoi(parts[1])\n\t\t\tv.Reserve(newCapacity)\n\t\tcase \"slice\":\n\t\t\t// start, _ := strconv.Atoi(parts[1])\n\t\t\t// end, _ := strconv.Atoi(parts[2])\n\t\t\t// slice := v.Slice(start, end)\n\t\t\t// fmt.Println(slice)\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "lines": "187"
+        }
+    ]
+}

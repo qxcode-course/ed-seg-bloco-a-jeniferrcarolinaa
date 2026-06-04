@@ -124,6 +124,31 @@ func (v *Vector) PopBack() error {
 	return nil
 }
 
+// func insert
+func (v *Vector) Insert(index int, value int) error {
+	//inserir um valor no index e deslocar o resto
+	//verificar
+	if index < 0 || index >= v.size {
+		return fmt.Errorf("index out of range")
+	}
+
+	if v.size == v.capacity {
+		v.Reserve(v.capacity * 2)
+	}
+
+	//tem que copiar os elementos a serem deslocados para a posição à direita, para que n se perca
+	//de trás pra frente, assumindo que i começa no final
+	//para quando i atinge o index(indice do valor que quero inserir)
+	for i := v.size; i > index; i-- {
+		v.data[i] = v.data[i-1]
+	}
+
+	v.data[index] = value
+	v.size++
+	return nil
+
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -175,12 +200,12 @@ func main() {
 				fmt.Println(err)
 			}
 		case "insert":
-			// index, _ := strconv.Atoi(parts[1])
-			// value, _ := strconv.Atoi(parts[2])
-			// err := v.Insert(index, value)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// }
+			index, _ := strconv.Atoi(parts[1])
+			value, _ := strconv.Atoi(parts[2])
+			err := v.Insert(index, value)
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "erase":
 			// index, _ := strconv.Atoi(parts[1])
 			// err := v.Erase(index)

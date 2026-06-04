@@ -80,3 +80,14 @@
 2026-06-03 22:28:32, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:45, size:234
 2026-06-03 22:29:23, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:45, size:233
 2026-06-03 22:30:22, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:54, size:233
+2026-06-03 22:30:14, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 22:30:21, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 23:14:36, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:54
+2026-06-03 23:14:35, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 23:19:39, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:54, size:254
+2026-06-03 23:20:05, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:54, size:254
+2026-06-03 23:19:59, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 23:19:34, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 23:19:34, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 23:20:05, MOVE, v:1, k:ed@vetbuild, mode:EDIT
+2026-06-03 23:24:34, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:72, size:258

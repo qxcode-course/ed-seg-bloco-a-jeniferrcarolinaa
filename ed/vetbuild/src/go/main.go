@@ -199,6 +199,7 @@ func (v *Vector) Slice(start int, end int) *Vector {
 	novoVetor.capacity = end - start // atualizar capacidade
 	novoVetor.size = end - start     //atualizar o tamanho
 	return novoVetor
+
 }
 
 func Join(slice []int, sep string) string {

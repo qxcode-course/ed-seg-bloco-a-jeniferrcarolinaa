@@ -108,7 +108,20 @@ func (v *Vector) Set(index int, value int) error {
 func (v *Vector) Clear() {
 	//limpar o vetor, é size 0
 	v.size = 0
+	//
 
+}
+
+// func PopBack, Remove e retorna o último elemento do vetor. Retorna um erro se o vetor estiver vazio
+func (v *Vector) PopBack() error {
+	//
+	//remove e retorna o ultimo elemento
+	//mensagem de erro se estiver vazio
+	if v.size == 0 {
+		return fmt.Errorf("vector is empty")
+	}
+	v.size--
+	return nil
 }
 
 func Join(slice []int, sep string) string {
@@ -157,10 +170,10 @@ func main() {
 		case "status":
 			fmt.Println(v.Status())
 		case "pop":
-			// err := v.PopBack()
-			// if err != nil {
-			// 	fmt.Println(err)
-			// }
+			err := v.PopBack()
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "insert":
 			// index, _ := strconv.Atoi(parts[1])
 			// value, _ := strconv.Atoi(parts[2])

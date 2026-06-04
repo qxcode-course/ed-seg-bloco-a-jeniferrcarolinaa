@@ -149,6 +149,18 @@ func (v *Vector) Insert(index int, value int) error {
 
 }
 
+func (v *Vector) Erase(index int) error {
+	if index < 0 || index >= v.size {
+		return fmt.Errorf("index out of range")
+	}
+	for i := index; i < v.size-1; i++ {
+		v.data[i] = v.data[i+1]
+	}
+
+	v.size--
+	return nil
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -207,11 +219,11 @@ func main() {
 				fmt.Println(err)
 			}
 		case "erase":
-			// index, _ := strconv.Atoi(parts[1])
-			// err := v.Erase(index)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// }
+			index, _ := strconv.Atoi(parts[1])
+			err := v.Erase(index)
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "indexOf":
 			// value, _ := strconv.Atoi(parts[1])
 			// index := v.IndexOf(value)

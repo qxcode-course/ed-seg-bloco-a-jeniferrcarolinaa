@@ -115,6 +115,32 @@ func (v *Set) Contains(value int) bool {
 	return !achou
 }
 
+// func erase
+func (v *Set) Erase(value int) error {
+	var index int
+	index = -1
+
+	//fazer verificação se o elemento existe
+	for i := 0; i < v.size; i++ {
+		if v.data[i] == value {
+			index = i
+			break
+		}
+	}
+
+	if index == -1 { //se não existe, publicar erro
+		return fmt.Errorf("value not found")
+	}
+
+	for i := index; i < v.size-1; i++ {
+		v.data[i] = v.data[i+1]
+	}
+
+	v.size--
+	return nil
+
+}
+
 func main() {
 	var line, cmd string
 	scanner := bufio.NewScanner(os.Stdin)
@@ -144,7 +170,11 @@ func main() {
 		case "show":
 			fmt.Println(v)
 		case "erase":
-			// value, _ := strconv.Atoi(parts[1])
+			value, _ := strconv.Atoi(parts[1])
+			err := v.Erase(value)
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "contains":
 			value, _ := strconv.Atoi(parts[1])
 			if v.Contains(value) {

@@ -130,6 +130,7 @@ func (v *Set) Erase(value int) error {
 
 	if index == -1 { //se não existe, publicar erro
 		return fmt.Errorf("value not found")
+
 	}
 
 	for i := index; i < v.size-1; i++ {

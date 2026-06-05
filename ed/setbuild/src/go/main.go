@@ -101,6 +101,20 @@ func (v *Set) Insert(value int) {
 	_ = v.insert(posicao, value)
 }
 
+// func contains
+func (v *Set) Contains(value int) bool {
+	var achou bool
+	achou = true
+	for i := 0; i < v.size; i++ {
+		if v.data[i] == value {
+			return achou
+		}
+
+	}
+
+	return !achou
+}
+
 func main() {
 	var line, cmd string
 	scanner := bufio.NewScanner(os.Stdin)
@@ -132,7 +146,12 @@ func main() {
 		case "erase":
 			// value, _ := strconv.Atoi(parts[1])
 		case "contains":
-			// value, _ := strconv.Atoi(parts[1])
+			value, _ := strconv.Atoi(parts[1])
+			if v.Contains(value) {
+				fmt.Println("true")
+			} else {
+				fmt.Println("false")
+			}
 		case "clear":
 		default:
 			fmt.Println("fail: comando invalido")

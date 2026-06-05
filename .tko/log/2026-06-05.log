@@ -16,3 +16,15 @@
 2026-06-05 00:25:50, MOVE, v:1, k:ed@setbuild, mode:EDIT
 2026-06-05 00:25:56, MOVE, v:1, k:ed@setbuild, mode:EDIT
 2026-06-05 00:28:24, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-06-05 00:30:45, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-05 13:02:07, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-06-05 13:02:47, MOVE, v:1, k:ed@setbuild, mode:BACK
+2026-06-05 13:02:49, MOVE, v:1, k:ed@setbuild, mode:PICK
+2026-06-05 13:03:33, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:33
+2026-06-05 13:02:07, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-05 13:02:07, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-05 13:02:54, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-05 13:03:33, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-05 13:07:33, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-05 13:10:31, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:33, size:160
+2026-06-05 13:11:47, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:66, size:160

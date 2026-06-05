@@ -13,8 +13,8 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@basic
 - ed@vector
+- ed@basic
 flags:
   inbox: all
   panel: graph
@@ -22,5 +22,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@setbuild
-selected_index: 13
+selected: ed@bettersearch
+selected_index: 14

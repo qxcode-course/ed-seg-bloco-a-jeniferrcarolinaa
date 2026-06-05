@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-05_14-31-16",
+            "content": "@@ -67,899 +67,63 @@\n %0A)%0A%0A\n-//relembrando o binarysearch da quest%C3%A3o anterior%0A//realiza busca bin%C3%A1ria e retorna o %C3%ADndice do valor, ou-1 se n%C3%A3o for encontrado%0A%0Afunc BetterSearch(slice %5B%5Dint, value int) (bool, int) %7B%0A%09//high %C3%A9 o final do vetor%0A%09//low %C3%A9 o %C3%ADndice inicial, ou seja, 0%0A%09//middle %C3%A9 o meio do vetor%0A%09//a diferen%C3%A7a entre encontrar o elemento pelo for e pelo binary search %C3%A9 que o custo de opera%C3%A7%C3%A3o%0A%09high := len(slice) //%C3%BAtimo %C3%ADndice%0A%09low := 0           //%0A%0A%09//middle :=  (low +high)/ 2%0A%0A%09for low %3C= high %7B //enquanto middle (que %C3%A9 o valor procurado) n%C3%A3o for encontrado%0A%09%09middle := (low + high) / 2%0A%09%09if value == slice%5Bmiddle%5D %7B%0A%09%09%09return true, middle%0A%09%09%7D%0A%0A%09%09if value %3C slice%5Bmiddle%5D %7B%0A%09%09%09high = middle - 1%0A%09%09%7D else %7B%0A%09%09%09low = middle + 1%0A%09%09%7D%0A%09%7D%0A%09//se o valor procurado estiver antes do meio do vetor%0A%09// if value %3C slice%5Bmiddle%5D%7B%0A%09// %09high = middle -1%0A%09// %7D%0A%09//estando depois%0A%09// if value %3E slice%5Bmiddle%5D%7B%0A%0A%09// %7D%0A\n+func BetterSearch(slice %5B%5Dint, value int) (bool, int) %7B\n %0A%09_,\n@@ -159,32 +159,9 @@\n se, \n-low //onde deveria estar\n+0\n %0A%7D%0A%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-05_17-55-03",
+            "content": "@@ -956,18 +956,16 @@\n %09// %7D%0A%0A%09\n-//\n _, _ = s\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-05_17-56-24",
+            "content": "@@ -539,16 +539,17 @@\n or low %3C\n+=\n  high %7B \n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-05_17-56-41",
+            "content": "@@ -539,17 +539,16 @@\n or low %3C\n-=\n  high %7B \n@@ -786,50 +786,10 @@\n %09%09%7D%0A\n-%0A\n %09%7D\n-%0A%0A%09return false, 0 //onde deveria estar\n %0A%09//\n@@ -977,16 +977,55 @@\n , value%0A\n+%09return false, low //onde deveria estar\n %0A%7D%0A%0Afunc\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-05_18-01-34",
+            "content": "@@ -803,18 +803,17 @@\n  false, \n--1\n+0\n  //onde \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-05_18-01-54",
+            "content": "@@ -803,19 +803,18 @@\n  false, \n-low\n+-1\n  //onde \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-05_18-02-07",
+            "content": "@@ -539,16 +539,17 @@\n or low %3C\n+=\n  high %7B \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-05_18-03-31",
+            "content": "@@ -459,20 +459,16 @@\n n(slice)\n- - 1\n  //%C3%BAtimo\n@@ -495,20 +495,16 @@\n         \n-    \n //%0A%0A%09//m\n@@ -539,17 +539,16 @@\n or low %3C\n-=\n  high %7B \n@@ -562,40 +562,55 @@\n nto \n-ainda tiver elemento a ser procu\n+middle (que %C3%A9 o valor procurado) n%C3%A3o for encont\n rado\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-05_18-06-48",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\n//relembrando o binarysearch da quest\u00e3o anterior\n//realiza busca bin\u00e1ria e retorna o \u00edndice do valor, ou-1 se n\u00e3o for encontrado\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\t//high \u00e9 o final do vetor\n\t//low \u00e9 o \u00edndice inicial, ou seja, 0\n\t//middle \u00e9 o meio do vetor\n\t//a diferen\u00e7a entre encontrar o elemento pelo for e pelo binary search \u00e9 que o custo de opera\u00e7\u00e3o\n\thigh := len(slice) - 1 //\u00fatimo \u00edndice\n\tlow := 0               //\n\n\t//middle :=  (low +high)/ 2\n\n\tfor low <= high { //enquanto ainda tiver elemento a ser procurado\n\t\tmiddle := (low + high) / 2\n\t\tif value == slice[middle] {\n\t\t\treturn true, middle\n\t\t}\n\n\t\tif value < slice[middle] {\n\t\t\thigh = middle - 1\n\t\t} else {\n\t\t\tlow = middle + 1\n\t\t}\n\n\t}\n\n\treturn false, low //onde deveria estar\n\t//se o valor procurado estiver antes do meio do vetor\n\t// if value < slice[middle]{\n\t// \thigh = middle -1\n\t// }\n\t//estando depois\n\t// if value > slice[middle]{\n\n\t// }\n\n\t//_, _ = slice, value\n\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tslice := []int{}\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tfound, result := BetterSearch(slice, value)\n\tif found {\n\t\tfmt.Println(\"V\", result)\n\t} else {\n\t\tfmt.Println(\"F\", result)\n\t}\n}\n",
+            "lines": "69"
+        }
+    ]
+}

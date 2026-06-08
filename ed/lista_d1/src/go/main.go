@@ -136,6 +136,28 @@ func (ll *LList) PushFront(num int) { //empurra pra direita
 
 }
 
+// popfront
+// PopFront()           // remove o primeiro valor da lista se existir
+func (ll *LList) PopFront() {
+	//1,3,4,5
+	//pop_front
+	//3,4,5
+	//primeiro(1) - ll.root.next
+	//ultimo(5) - ll.root.prev
+	//quero transformar o segundo no primeiro
+	primeiro := ll.root.next
+
+	//segundo é o que está próximo ao primeiro
+	segundo := primeiro.next
+
+	//root passar a apontar pro segundo
+	ll.root.next = segundo
+
+	//o anterior ao segundo sendo o root
+	segundo.prev = ll.root
+
+}
+
 // clear
 func (ll *LList) Clear() {
 	ll.root.next = ll.root
@@ -179,7 +201,7 @@ func main() {
 		case "pop_back":
 			// ll.PopBack()
 		case "pop_front":
-			// ll.PopFront()
+			ll.PopFront()
 		case "clear":
 			ll.Clear()
 		case "end":

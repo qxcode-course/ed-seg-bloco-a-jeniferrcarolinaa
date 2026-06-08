@@ -25,11 +25,8 @@ func NewLList() *LList {
 	root := &Node{}
 	root.next = root
 	root.prev = root
-
-	return &LList{
-		root: root,
-		size: 0,
-	}
+	root.root = root
+	return &LList{root: root}
 }
 
 // implementar Next() e Prev()
@@ -56,7 +53,7 @@ func (n *Node) Prev() *Node {
 
 func (ll *LList) Front() *Node {
 	//se a lista estiver vazia, size é 0
-	if ll.size == 0 {
+	if ll.root.next == ll.root {
 		return nil
 	}
 
@@ -64,10 +61,9 @@ func (ll *LList) Front() *Node {
 }
 
 func (ll *LList) Back() *Node {
-	if ll.size == 0 {
-		return nil
+	if ll.root.prev == ll.root { //se o anterior for root
+		return nil //nulo
 	}
-
 	return ll.root.prev
 }
 
@@ -85,7 +81,7 @@ func (ll *LList) string() string {
 		}
 
 		//adicionar os nós às listas
-		fmt.Sprintf("%d", node.Value)
+		s += fmt.Sprintf("%d", node.Value)
 	}
 
 	s += "]"

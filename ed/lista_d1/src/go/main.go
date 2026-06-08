@@ -22,7 +22,6 @@ type Node struct {
 
 type LList struct {
 	root *Node //a raiz é um nó tbm
-	size int
 }
 
 //root = nó sentinela
@@ -33,10 +32,8 @@ func NewLList() *LList {
 	root.next = root
 	root.prev = root
 
-	return &LList{
-		root: root,
-		size: 0,
-	}
+	return &LList{root: root}
+
 }
 
 // pro teste 1, preciso da func String
@@ -80,12 +77,10 @@ func (ll *LList) String() string {
 // PushBack(value int)  // adiciona um novo nó com esse valor no fim da lista
 func (ll *LList) PushBack(num int) {
 	//preciso criar um novo nó (aquele a ser adicionado pelo usuário)E guardar o seu valor
-	novo := &Node{
-		Value: num,
-	}
+	novo := &Node{Value: num}
 
 	//último nó da lista vazia é o próprio root
-	ultimo := ll.root.next
+	ultimo := ll.root.prev
 	// 10,20(20 é o último)
 	//adiciona nó 30
 	//10,20,30 ->nil(ll.root)
@@ -101,13 +96,15 @@ func (ll *LList) PushBack(num int) {
 	//o novo elemento é o último da lista
 	ll.root.prev = novo
 
-	//aumentar a quantidade de elementos por elemento adicionado
-	ll.size++
 }
 
 // preciso do size pra correr o teste 3
 func (ll *LList) Size() int {
-	return ll.size
+	count := 0
+	for n := ll.root.next; n != ll.root; n = n.next {
+		count++
+	}
+	return count
 }
 
 // pushfront
@@ -137,8 +134,12 @@ func (ll *LList) PushFront(num int) { //empurra pra direita
 	//anterior do 20(antigo primeiro) é o novo(30)
 	primeiro.prev = novo
 
-	ll.size++
+}
 
+// clear
+func (ll *LList) Clear() {
+	ll.root.next = ll.root
+	ll.root.prev = ll.root
 }
 
 func main() {
@@ -180,7 +181,7 @@ func main() {
 		case "pop_front":
 			// ll.PopFront()
 		case "clear":
-			// ll.Clear()
+			ll.Clear()
 		case "end":
 			return
 		default:

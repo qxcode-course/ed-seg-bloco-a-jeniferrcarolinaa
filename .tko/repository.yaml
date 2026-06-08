@@ -13,17 +13,17 @@ sources:
   writeable: false
   quests: null
 expanded:
+- ed@vector
 - ed@linear
-- ed@list
 - sandbox@sandbox
 - ed@rec
-- ed@map_set
-- ed@vector
 - ed@basic
+- ed@map_set
+- ed@list
 flags:
   inbox: all
-  panel: skills
-  show_panel: 'false'
+  panel: graph
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go

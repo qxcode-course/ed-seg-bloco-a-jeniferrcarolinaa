@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -46,6 +47,7 @@ func (ll *LList) String() string {
 	//evitar colocar a , antes do primeiro elemento
 	//primeiro := true
 	//percorrer a lista até a root(nó sentinela), que não tem um valor na lista
+
 	for node != ll.root {
 		//não sendo o primeiro elemento
 		if node != ll.root.next {
@@ -75,6 +77,70 @@ func (ll *LList) String() string {
 // s += "]"
 // return s
 
+// PushBack(value int)  // adiciona um novo nó com esse valor no fim da lista
+func (ll *LList) PushBack(num int) {
+	//preciso criar um novo nó (aquele a ser adicionado pelo usuário)E guardar o seu valor
+	novo := &Node{
+		Value: num,
+	}
+
+	//último nó da lista vazia é o próprio root
+	ultimo := ll.root.next
+	// 10,20(20 é o último)
+	//adiciona nó 30
+	//10,20,30 ->nil(ll.root)
+	//o nó anterior ao novo (30) é o último anterior(20)
+	novo.prev = ultimo
+
+	//o nó próximo ao novo(que está no final da lista) é o root
+	novo.next = ll.root
+
+	//o antigo último(20) tem como next o novo(30)
+	ultimo.next = novo
+
+	//o novo elemento é o último da lista
+	ll.root.prev = novo
+
+	//aumentar a quantidade de elementos por elemento adicionado
+	ll.size++
+}
+
+// preciso do size pra correr o teste 3
+func (ll *LList) Size() int {
+	return ll.size
+}
+
+// pushfront
+// PushFront(value int) // adiciona um novo nó com esse valor no início da lista
+func (ll *LList) PushFront(num int) { //empurra pra direita
+	novo := &Node{
+		Value: num,
+	}
+
+	//primeiro nó da lista vazia é o root
+	primeiro := ll.root.next
+
+	//quero adicionar um novo elemento
+	//10,20
+	//novo:30
+	//30,10,20
+	//anterior de 30(novo) é o root
+
+	novo.prev = ll.root
+
+	//próximo de 30 (novo) é o 20 (antigo primeiro)
+	novo.next = primeiro
+
+	//o próximo do root é o novo
+	ll.root.next = novo
+
+	//anterior do 20(antigo primeiro) é o novo(30)
+	primeiro.prev = novo
+
+	ll.size++
+
+}
+
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	ll := NewLList()
@@ -98,17 +164,17 @@ func main() {
 		case "show":
 			fmt.Println(ll.String())
 		case "size":
-			// fmt.Println(ll.Size())
+			fmt.Println(ll.Size())
 		case "push_back":
-			// for _, v := range args[1:] {
-			// 	num, _ := strconv.Atoi(v)
-			// 	ll.PushBack(num)
-			// }
+			for _, v := range args[1:] {
+				num, _ := strconv.Atoi(v)
+				ll.PushBack(num)
+			}
 		case "push_front":
-			// for _, v := range args[1:] {
-			// 	num, _ := strconv.Atoi(v)
-			// 	ll.PushFront(num)
-			// }
+			for _, v := range args[1:] {
+				num, _ := strconv.Atoi(v)
+				ll.PushFront(num)
+			}
 		case "pop_back":
 			// ll.PopBack()
 		case "pop_front":

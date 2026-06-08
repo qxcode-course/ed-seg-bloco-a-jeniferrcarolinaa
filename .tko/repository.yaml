@@ -13,13 +13,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
-- ed@linear
-- sandbox@sandbox
 - ed@rec
-- ed@basic
+- ed@vector
+- sandbox@sandbox
 - ed@map_set
+- ed@basic
 - ed@list
+- ed@linear
 flags:
   inbox: all
   panel: graph

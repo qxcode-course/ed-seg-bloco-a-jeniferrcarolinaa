@@ -175,6 +175,24 @@ func (ms *MultiSet) count(value int) int {
 	return contador
 }
 
+// unique
+// Unique(): int                           ' Retorna o número de valores distintos no multiconjunto
+func (ms *MultiSet) unique() int {
+	//criar contador e ir increme. por elemento diferente
+	//se n tiver elementos
+	if ms.size == 0 {
+		return 0
+	}
+	contador := 1 //tem pelo menos um elemento distinto
+	for i := 1; i < ms.size; i++ {
+		if ms.data[i] != ms.data[i-1] {
+			contador++
+		}
+	}
+
+	return contador
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -231,6 +249,7 @@ func main() {
 			value, _ := strconv.Atoi(args[1])
 			fmt.Println(ms.count(value))
 		case "unique":
+			fmt.Println(ms.unique())
 		case "clear":
 		default:
 			fmt.Println("fail: comando invalido")

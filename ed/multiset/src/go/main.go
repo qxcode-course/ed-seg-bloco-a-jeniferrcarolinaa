@@ -1,0 +1,173 @@
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+type MultiSet struct {
+	data     []int
+	size     int
+	capacity int
+}
+
+func NewMultiSet(capacity int) *MultiSet {
+	return &MultiSet{
+		data:     make([]int, capacity),
+		size:     0,
+		capacity: capacity,
+	}
+}
+
+//adiantar func String
+
+func (ms *MultiSet) String() string {
+	s := "["
+	for i := 0; i < ms.size; i++ {
+		if i > 0 {
+			s += ", "
+		}
+
+		s += fmt.Sprintf("%d", ms.data[i])
+	}
+
+	s += "]"
+	return s
+}
+
+//para aumentar a capacidade do vetor, agr é o expand
+
+func (ms *MultiSet) expand(newCapacity int) {
+	newData := make([]int, newCapacity)
+	for i := 0; i < ms.size; i++ {
+		newData[i] = ms.data[i]
+	}
+	ms.data = newData
+	ms.capacity = newCapacity
+}
+
+//func search
+
+func (ms *MultiSet) search(value int) (bool, int) {
+	//fazer o equivalente ao bettersearch
+	low := 0
+	high := ms.size - 1
+
+	for low <= high {
+		midlle := (low + high) / 2
+
+		if ms.data[midlle] == value { //se encontrou o valor procurado
+			//preciso resolver o problema do registro da última ocorrência do elemento x
+			last := midlle //guarda a pos da última ocorrência
+			//garantir que esteja dentro dos limites do vetor
+			//&& verificar se o próximo elemento é igual ao valor procurado
+			for last+1 < ms.size && ms.data[last+1] == value {
+				last++ //incrementa a pos, foi achado um outro elemento igual
+			}
+			return true, last
+
+		}
+
+		if value < ms.data[midlle] {
+			high = midlle - 1
+		} else {
+			low = midlle + 1
+		}
+	}
+
+	return false, low
+}
+
+// insert
+func (ms *MultiSet) insert(value int, index int) error {
+	//verificação
+	if index < 0 || index > ms.size {
+		fmt.Errorf("index out of range")
+	}
+
+	//expandir capacity quando necessário
+	if ms.capacity == 0 {
+		ms.expand(1)
+	} else {
+		ms.expand(2 * ms.capacity)
+	}
+
+	//deslocar elementos pra direita
+	for i := ms.size; i > index; i-- {
+		ms.data[i] = ms.data[i-1]
+	}
+
+	ms.data[index] = value
+	ms.size++
+
+	return nil
+}
+
+// agora o Insert
+func (ms *MultiSet) Insert(value int) {
+	achou, posicao := ms.search(value)
+	//inserir após a última ocorrencia
+	//função search retorna 2 valores, um bool e um inteiro
+	if achou { //incrementar a repetição
+		ms.insert(value, posicao+1) //value,index
+	} else {
+		ms.insert(value, posicao)
+	}
+
+}
+
+func Join(slice []int, sep string) string {
+	if len(slice) == 0 {
+		return ""
+	}
+	result := fmt.Sprintf("%d", slice[0])
+	for _, value := range slice[1:] {
+		result += sep + fmt.Sprintf("%d", value)
+	}
+	return result
+}
+
+func main() {
+	var line, cmd string
+	scanner := bufio.NewScanner(os.Stdin)
+	ms := NewMultiSet(0)
+
+	for scanner.Scan() {
+		fmt.Print("$")
+		line = scanner.Text()
+		args := strings.Fields(line)
+		fmt.Println(line)
+		if len(args) == 0 {
+			continue
+		}
+		cmd = args[0]
+
+		switch cmd {
+		case "end":
+			return
+		case "init":
+			value, _ := strconv.Atoi(args[1])
+			ms = NewMultiSet(value)
+		case "insert":
+			for _, part := range args[1:] {
+				value, _ := strconv.Atoi(part)
+				ms.Insert(value)
+			}
+		case "show":
+			fmt.Println(ms)
+		case "erase":
+			// value, _ := strconv.Atoi(args[1])
+		case "contains":
+			// value, _ := strconv.Atoi(args[1])
+		case "count":
+			// value, _ := strconv.Atoi(args[1])
+		case "unique":
+		case "clear":
+		default:
+			fmt.Println("fail: comando invalido")
+		}
+	}
+}

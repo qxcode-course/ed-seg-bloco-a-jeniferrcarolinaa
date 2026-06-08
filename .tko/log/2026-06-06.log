@@ -1,0 +1,17 @@
+2026-06-06 21:50:55, MOVE, v:1, k:ed@multiset, mode:DOWN
+2026-06-06 21:51:00, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-06-06 21:51:03, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 21:50:55, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 21:50:55, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 21:51:02, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 21:57:48, MOVE, v:1, k:ed@multiset, mode:BACK
+2026-06-06 21:58:28, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-06-06 21:57:19, MOVE, v:1, k:ed@setbuild, mode:EDIT
+2026-06-06 22:06:26, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:59
+2026-06-06 22:06:25, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 22:12:00, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 22:30:28, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-06 22:52:36, MOVE, v:1, k:ed@multiset, mode:BACK
+2026-06-06 22:54:04, MOVE, v:1, k:ed@multiset, mode:PICK
+2026-06-06 22:54:29, EXEC, v:1, k:ed@multiset, mode:FULL, rate:0, size:133
+2026-06-06 22:54:34, MOVE, v:1, k:ed@multiset, mode:BACK

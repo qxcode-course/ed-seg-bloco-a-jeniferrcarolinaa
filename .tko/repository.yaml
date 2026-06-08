@@ -13,19 +13,19 @@ sources:
   writeable: false
   quests: null
 expanded:
+- ed@linear
 - ed@list
+- sandbox@sandbox
+- ed@rec
 - ed@map_set
 - ed@vector
-- sandbox@sandbox
 - ed@basic
-- ed@rec
-- ed@linear
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'true'
+  panel: skills
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@multiset
-selected_index: 48
+selected: ed@lista_d1
+selected_index: 52

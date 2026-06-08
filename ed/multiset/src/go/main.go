@@ -193,6 +193,12 @@ func (ms *MultiSet) unique() int {
 	return contador
 }
 
+// clear. remove todos os elemen
+func (ms *MultiSet) clear() {
+	//só fazer o tam ser = 0
+	ms.size = 0
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -251,6 +257,7 @@ func main() {
 		case "unique":
 			fmt.Println(ms.unique())
 		case "clear":
+			ms.clear()
 		default:
 			fmt.Println("fail: comando invalido")
 		}

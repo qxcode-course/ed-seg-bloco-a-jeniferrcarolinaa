@@ -25,3 +25,8 @@
 2026-06-08 07:51:54, EXEC, v:1, k:ed@multiset, mode:FULL, rate:66, size:258
 2026-06-08 07:52:05, EXEC, v:1, k:ed@multiset, mode:FULL, rate:66
 2026-06-08 07:52:25, EXEC, v:1, k:ed@multiset, mode:FULL, rate:83, size:258
+2026-06-08 07:52:20, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-08 07:51:49, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-08 07:51:49, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-08 07:52:25, MOVE, v:1, k:ed@multiset, mode:EDIT
+2026-06-08 07:56:30, EXEC, v:1, k:ed@multiset, mode:FULL, rate:100, size:265

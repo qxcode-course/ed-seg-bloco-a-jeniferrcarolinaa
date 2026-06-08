@@ -260,6 +260,7 @@ func main() {
 			ms.clear()
 		default:
 			fmt.Println("fail: comando invalido")
+
 		}
 	}
 }

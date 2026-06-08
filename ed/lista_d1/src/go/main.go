@@ -158,6 +158,26 @@ func (ll *LList) PopFront() {
 
 }
 
+// popback
+func (ll *LList) PopBack() {
+	//apaga o último
+	//1,2,3
+	//popback
+	//1,2
+	//o ultimo (3) vem após o penúltimo (2)
+	//ultimo:= ll.root.prev
+	//penultimo := ultimo.prev
+
+	ultimo := ll.root.prev
+	penultimo := ultimo.prev
+
+	//penultimo aponta para root
+	penultimo.next = ll.root
+
+	//o root aponta para o penultimo
+	ll.root.prev = penultimo
+}
+
 // clear
 func (ll *LList) Clear() {
 	ll.root.next = ll.root
@@ -199,7 +219,7 @@ func main() {
 				ll.PushFront(num)
 			}
 		case "pop_back":
-			// ll.PopBack()
+			ll.PopBack()
 		case "pop_front":
 			ll.PopFront()
 		case "clear":

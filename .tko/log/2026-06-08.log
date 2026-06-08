@@ -98,3 +98,8 @@
 2026-06-08 11:43:20, MOVE, v:1, k:ed@lista_d1, mode:EDIT
 2026-06-08 11:44:00, MOVE, v:1, k:ed@lista_d1, mode:EDIT
 2026-06-08 11:45:24, EXEC, v:1, k:ed@lista_d1, mode:FULL, rate:85
+2026-06-08 11:45:23, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-06-08 11:59:57, EXEC, v:1, k:ed@lista_d1, mode:FULL, rate:0, size:233
+2026-06-08 11:59:35, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-06-08 11:59:57, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-06-08 12:00:03, EXEC, v:1, k:ed@lista_d1, mode:FULL, rate:100

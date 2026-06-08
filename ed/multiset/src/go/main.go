@@ -162,6 +162,19 @@ func (ms *MultiSet) Erase(value int) error {
 
 }
 
+// count
+// + Count(value: int): int                  ' Retorna o número de ocorrências do valor no multiconjunto
+func (ms *MultiSet) count(value int) int {
+	contador := 0 //estabelecer um contador
+	for i := 0; i < ms.size; i++ {
+		if ms.data[i] == value {
+			contador++
+		}
+	}
+
+	return contador
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -215,7 +228,8 @@ func main() {
 				fmt.Println("false")
 			}
 		case "count":
-			// value, _ := strconv.Atoi(args[1])
+			value, _ := strconv.Atoi(args[1])
+			fmt.Println(ms.count(value))
 		case "unique":
 		case "clear":
 		default:

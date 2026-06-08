@@ -132,6 +132,36 @@ func (ms *MultiSet) contains(value int) bool {
 	return !achou
 }
 
+// erase
+func (ms *MultiSet) erase(index int) error {
+	//verificação
+	if index < 0 || index > ms.size {
+		fmt.Errorf("index out of range")
+	}
+
+	//fazer o contrário de insert, deslocar os elementos pra esquerda
+	for i := index; i < ms.size-1; i++ {
+		ms.data[i] = ms.data[i+1]
+	}
+
+	ms.size--
+	return nil
+}
+
+//Erase
+
+func (ms *MultiSet) Erase(value int) error {
+	//ideia semelhante ao Insert
+	achou, index := ms.search(value)
+
+	if !achou {
+		return fmt.Errorf("value not found") //caso não se encontre o valor procurado
+	}
+	//chamar o erase
+	return ms.erase(index)
+
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -172,7 +202,11 @@ func main() {
 		case "show":
 			fmt.Println(ms)
 		case "erase":
-			// value, _ := strconv.Atoi(args[1])
+			value, _ := strconv.Atoi(args[1])
+			err := ms.Erase(value)
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "contains":
 			value, _ := strconv.Atoi(args[1])
 			if ms.contains(value) {

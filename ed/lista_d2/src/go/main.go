@@ -19,7 +19,7 @@ type Node struct {
 type LList struct {
 	root *Node
 	size int
-}
+} //NÃO SEI COMO FAZ PRA RODAR AQUIII TU FAZ UM COMMIT PRA CADA VEZ QUE TENTA RODAR O CÓDIGO?
 
 func NewLList() *LList {
 	root := &Node{}
@@ -99,6 +99,17 @@ func (ll *LList) Size() int {
 
 }
 
+// func pushfront
+func (ll *LList) PushFront(num int) {
+	novo := &Node{Value: num, root: ll.root}
+	primeiro := ll.root.next
+	novo.prev = ll.root
+	novo.next = primeiro
+	ll.root.next = novo
+	primeiro.prev = novo
+	ll.size++
+}
+
 // pushback
 func (ll *LList) PushBack(num int) {
 	//mesmo que D1, basicamente
@@ -106,9 +117,29 @@ func (ll *LList) PushBack(num int) {
 	ultimo := ll.root.prev
 	novo.prev = ultimo
 	novo.next = ll.root
-	ultimo.next = ll.root
+	ultimo.next = novo
 	ll.root.prev = novo
 	ll.size++
+}
+
+func (ll *LList) Clear() {
+	ll.root.next = ll.root
+	ll.root.prev = ll.root
+	ll.size = 0
+}
+
+// implementar o search
+// modelo iterador
+func (ll *LList) Search(value int) *Node {
+	//começa pelo primeiro valor válido do nó
+	for node := ll.Front(); node != nil; node = node.Next() {
+		//verificar se encontrou o valor
+		if node.Value == value {
+			return node //retorna o nó
+		}
+	}
+
+	return nil
 }
 
 func main() {
@@ -141,35 +172,35 @@ func main() {
 				ll.PushBack(num)
 			}
 		case "push_front":
-			// for _, v := range args[1:] {
-			// 	num, _ := strconv.Atoi(v)
-			// 	ll.PushFront(num)
-			// }
+			for _, v := range args[1:] {
+				num, _ := strconv.Atoi(v)
+				ll.PushFront(num)
+			}
 		case "pop_back":
 			// ll.PopBack()
 		case "pop_front":
 			// ll.PopFront()
 		case "clear":
-			// ll.Clear()
+			ll.Clear()
 		case "walk":
-			// fmt.Print("[ ")
-			// for node := ll.Front(); node != nil; node = node.Next() {
-			// 	fmt.Printf("%v ", node.Value)
-			// }
-			// fmt.Print("]\n[ ")
-			// for node := ll.Back(); node != nil; node = node.Prev() {
-			// 	fmt.Printf("%v ", node.Value)
-			// }
-			// fmt.Println("]")
+			fmt.Print("[ ")
+			for node := ll.Front(); node != nil; node = node.Next() {
+				fmt.Printf("%v ", node.Value)
+			}
+			fmt.Print("]\n[ ")
+			for node := ll.Back(); node != nil; node = node.Prev() {
+				fmt.Printf("%v ", node.Value)
+			}
+			fmt.Println("]")
 		case "replace":
-			// oldvalue, _ := strconv.Atoi(args[1])
-			// newvalue, _ := strconv.Atoi(args[2])
-			// node := ll.Search(oldvalue)
-			// if node != nil {
-			// 	node.Value = newvalue
-			// } else {
-			// 	fmt.Println("fail: not found")
-			// }
+			oldvalue, _ := strconv.Atoi(args[1])
+			newvalue, _ := strconv.Atoi(args[2])
+			node := ll.Search(oldvalue)
+			if node != nil {
+				node.Value = newvalue
+			} else {
+				fmt.Println("fail: not found")
+			}
 		case "insert":
 			// oldvalue, _ := strconv.Atoi(args[1])
 			// newvalue, _ := strconv.Atoi(args[2])

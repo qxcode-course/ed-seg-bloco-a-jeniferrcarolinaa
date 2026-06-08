@@ -119,6 +119,19 @@ func (ms *MultiSet) Insert(value int) {
 
 }
 
+// contains
+func (ms *MultiSet) contains(value int) bool {
+	var achou bool
+	achou = true
+	for i := 0; i < ms.size; i++ {
+		if ms.data[i] == value {
+			return achou
+		}
+	}
+
+	return !achou
+}
+
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
@@ -161,7 +174,12 @@ func main() {
 		case "erase":
 			// value, _ := strconv.Atoi(args[1])
 		case "contains":
-			// value, _ := strconv.Atoi(args[1])
+			value, _ := strconv.Atoi(args[1])
+			if ms.contains(value) {
+				fmt.Println("true")
+			} else {
+				fmt.Println("false")
+			}
 		case "count":
 			// value, _ := strconv.Atoi(args[1])
 		case "unique":

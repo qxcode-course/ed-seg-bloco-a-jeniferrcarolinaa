@@ -13,13 +13,13 @@ sources:
   writeable: false
   quests: null
 expanded:
+- ed@linear
+- sandbox@sandbox
+- ed@list
 - ed@rec
 - ed@vector
-- sandbox@sandbox
 - ed@map_set
 - ed@basic
-- ed@list
-- ed@linear
 flags:
   inbox: all
   panel: graph
@@ -27,5 +27,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@lista_d1
-selected_index: 52
+selected: ed@prin_list1
+selected_index: 54

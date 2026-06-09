@@ -142,6 +142,55 @@ func (ll *LList) Search(value int) *Node {
 	return nil
 }
 
+// Insert(node *Node, value int) // insere um novo nó antes do nó passado por referência
+func (ll *LList) Insert(node *Node, value int) {
+	//verificar se é nulo
+	if node == nil {
+		return
+	}
+	//criar o novo nó
+	novo := &Node{Value: value, root: ll.root}
+	//inserir antes do node
+	anterior := node.prev
+
+	//ligar o novo ao anterior
+	novo.prev = anterior
+
+	//próximo ao novo é o node
+	novo.next = node
+
+	//anterior aponta pro novo
+	anterior.next = novo
+
+	//antigo node aponta pro novo
+	node.prev = novo
+
+	ll.size++
+}
+
+// remove
+// Remove(node *Node) *Node      // remove o nó passado por referência retornando o nó que ficou no lugar dele
+func (ll *LList) Remove(node *Node) *Node {
+	//entender quem são os vizinhos
+	anterior := node.prev
+	proximo := node.next
+	//anterior deve apontar para o prox
+	anterior.next = proximo
+
+	//prox aponta pro anterior
+	proximo.prev = anterior
+
+	ll.size--
+
+	//verificação
+
+	if proximo == ll.root { //se o prox for a raiz sentinela
+		return nil
+	}
+
+	return proximo
+}
+
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	ll := NewLList()
@@ -202,22 +251,22 @@ func main() {
 				fmt.Println("fail: not found")
 			}
 		case "insert":
-			// oldvalue, _ := strconv.Atoi(args[1])
-			// newvalue, _ := strconv.Atoi(args[2])
-			// node := ll.Search(oldvalue)
-			// if node != nil {
-			// 	ll.Insert(node, newvalue)
-			// } else {
-			// 	fmt.Println("fail: not found")
-			// }
+			oldvalue, _ := strconv.Atoi(args[1])
+			newvalue, _ := strconv.Atoi(args[2])
+			node := ll.Search(oldvalue)
+			if node != nil {
+				ll.Insert(node, newvalue)
+			} else {
+				fmt.Println("fail: not found")
+			}
 		case "remove":
-			// oldvalue, _ := strconv.Atoi(args[1])
-			// node := ll.Search(oldvalue)
-			// if node != nil {
-			// 	ll.Remove(node)
-			// } else {
-			// 	fmt.Println("fail: not found")
-			// }
+			oldvalue, _ := strconv.Atoi(args[1])
+			node := ll.Search(oldvalue)
+			if node != nil {
+				ll.Remove(node)
+			} else {
+				fmt.Println("fail: not found")
+			}
 		case "end":
 			return
 		default:

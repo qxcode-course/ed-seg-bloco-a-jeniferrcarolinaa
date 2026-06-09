@@ -20,3 +20,20 @@
 2026-06-09 16:22:53, MOVE, v:1, k:ed@prin_list1, mode:EDIT
 2026-06-09 16:22:48, MOVE, v:1, k:ed@prin_list1, mode:EDIT
 2026-06-09 16:26:48, EXEC, v:1, k:ed@prin_list1, mode:FULL, rate:100, size:195
+2026-06-09 16:28:55, MOVE, v:1, k:ed@prin_list1, mode:BACK
+2026-06-09 16:29:32, SELF, v:1, k:ed@prin_list1, self:1, rate:100, study:50, friend:Joao Filipe, concept:1, refactor:1
+2026-06-09 16:28:17, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-06-09 16:26:48, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-06-09 16:33:29, SELF, v:1, k:ed@princesa, self:1, rate:100, study:30, concept:1, refactor:1
+2026-06-09 16:33:54, SELF, v:1, k:ed@apagando, self:1, rate:100, study:40, concept:1, refactor:1
+2026-06-09 16:34:11, SELF, v:1, k:ed@manipulacao, self:1, rate:100, study:120, concept:1
+2026-06-09 16:48:50, MOVE, v:1, k:ed@lista_d4, mode:DOWN
+2026-06-09 16:50:08, MOVE, v:1, k:ed@lista_d4, mode:PICK
+2026-06-09 16:50:10, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-06-09 16:50:10, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-06-09 17:00:46, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0, size:133
+2026-06-09 17:01:17, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0, size:133
+2026-06-09 17:01:10, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-06-09 17:01:17, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-06-09 17:16:57, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:66, size:151
+2026-06-09 17:17:48, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:100, size:151

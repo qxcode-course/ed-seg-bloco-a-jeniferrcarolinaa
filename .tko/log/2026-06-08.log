@@ -191,3 +191,6 @@
 2026-06-08 21:45:58, MOVE, v:1, k:ed@lista_d2, mode:PICK
 2026-06-08 21:57:04, MOVE, v:1, k:ed@lista_d2, mode:PICK
 2026-06-08 21:57:11, EXEC, v:1, k:ed@lista_d2, mode:FULL, rate:100, size:276
+2026-06-08 21:57:52, MOVE, v:1, k:ed@lista_d2, mode:BACK
+2026-06-08 21:58:34, SELF, v:1, k:ed@lista_d2, self:1, rate:100, study:120, friend:Joao Filipe, concept:1
+2026-06-08 21:57:11, MOVE, v:1, k:ed@lista_d2, mode:EDIT

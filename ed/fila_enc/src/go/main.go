@@ -31,7 +31,29 @@ func (q *Queue[T]) Enqueue(value T) {
 	q.size++
 }
 
-// func (q *Queue[T]) Dequeue() (T, bool)
+func (q *Queue[T]) Dequeue() (T, bool) { //true se removeu, false se a lista está vazia
+	var t T
+	if q.head == nil {
+		return t, false
+	}
+	//retornar a lista e true
+	value := q.head.Value
+	q.head = q.head.next
+
+	//se a fila ficou vazia(head = nil), n tem tail tbm
+	if q.head == nil {
+		q.tail = nil
+	}
+
+	q.size--
+	return value, true
+	//remove head
+	//1,2,3,4
+	//1 é a head
+	//só fazer o segundo elemento ser a head
+	//head.next = head
+}
+
 // func (q *Queue[T]) Peek() (T, bool)
 // func (q *Queue[T]) Size() int
 // func (q *Queue[T]) IsEmpty() bool
@@ -63,6 +85,19 @@ func (q *Queue[T]) String() string {
 	return result + "]"
 }
 
+// peek
+// Visualização do primeiro elemento Retorna o primeiro elemento sem removê-lo.
+func (q *Queue[T]) Peek() (T, bool) {
+	var t T
+	//verificar se a lista está vazia
+	if q.head == nil {
+		//fmt.Println("fail: fila vazia")
+		return t, false
+	}
+
+	return q.head.Value, true
+}
+
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	queue := NewQueue[int]()
@@ -88,15 +123,15 @@ func main() {
 				queue.Enqueue(value)
 			}
 		case "pop":
-			// if _, ok := queue.Dequeue(); !ok {
-			// 	fmt.Println("falha: fila vazia")
-			// }
+			if _, ok := queue.Dequeue(); !ok {
+				fmt.Println("falha: fila vazia")
+			}
 		case "peek":
-			// if value, ok := queue.Peek(); ok {
-			// 	fmt.Println(value)
-			// } else {
-			// 	fmt.Println("falha: fila vazia")
-			// }
+			if value, ok := queue.Peek(); ok {
+				fmt.Println(value)
+			} else {
+				fmt.Println("falha: fila vazia")
+			}
 		default:
 			fmt.Println("Unknown command:", args[0])
 		}

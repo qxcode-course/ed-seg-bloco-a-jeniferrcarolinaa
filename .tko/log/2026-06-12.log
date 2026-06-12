@@ -1,0 +1,34 @@
+2026-06-12 09:10:43, MOVE, v:1, k:ed@pilha, mode:DOWN
+2026-06-12 09:10:51, MOVE, v:1, k:ed@pilha, mode:PICK
+2026-06-12 09:10:54, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:10:43, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:10:43, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:10:55, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:29:51, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0, size:85
+2026-06-12 09:29:37, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:29:51, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:42:46, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0
+2026-06-12 09:43:00, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0, size:93
+2026-06-12 09:43:00, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:42:54, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:49:47, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0, size:102
+2026-06-12 09:49:54, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0
+2026-06-12 09:51:15, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:100
+2026-06-12 09:51:07, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:51:14, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:53:06, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:106
+2026-06-12 09:53:30, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:106
+2026-06-12 09:53:23, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:53:30, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:59:12, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:116
+2026-06-12 09:59:03, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 09:59:12, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:09:29, EXEC, v:1, k:ed@pilha, mode:FULL, rate:66, size:123
+2026-06-12 10:09:18, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:09:28, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:16:36, EXEC, v:1, k:ed@pilha, mode:FULL, rate:66, size:137
+2026-06-12 10:16:28, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:16:31, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:16:31, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:16:36, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-06-12 10:17:30, EXEC, v:1, k:ed@pilha, mode:FULL, rate:100, size:137

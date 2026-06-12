@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-12_10-29-45",
+            "content": "@@ -1,942 +1,42 @@\n-//esta meio confuso mas vamos l%C3%A1%0A//s%C3%A3o 15 jogos%0A//16 times diferentes%0A//2 times (duas letras) jogam um jogo por vez%0A//vai de A a P(16 letras)%0A//A - B%0A//2   3 /%3Erepresenta a pontua%C3%A7%C3%A3o de cada um%0A//8 jogos in%C3%ADcio%0A//dps 4%0A//dps 2%0A//dps 1%0A//ganhador%0A// 2 3 - B%0A// 3 1 - C%0A// 2 1 E%0A// 1 5 H%0A// 2 4 J%0A// 5 4 K%0A// 5 2 M%0A// 2 5 P%0A%0A// 1 4 times B e C - C%0A// 1 5 E e H - H%0A// 2 5 J e K - K%0A// 3 4 M e P - P%0A%0A// 1 2 C e H - H%0A// 5 3 K e P - K%0A%0A// 5 1 H e K - H ganha%0Apackage main%0A%0Afunc main() %7B%0A%09//primeiro eu tenho que criar uma fila com os 15 times%0A%09//NewQueue %C3%A9 a fun%C3%A7%C3%A3o de cria%C3%A7%C3%A3o de fila que vou usar%0A%09//como s%C3%A3o letras, o tipo %C3%A9 string%0A%09times := NewQueue%5Bstring%5D()%0A%09//come%C3%A7ando em A, indo at%C3%A9 P%0A%09//pesquisar sobre como adicionar strings%0A%09//UniCode , cada caractere representa um%0A%09for caractere := 'A'; caractere %3C= 'P'; caractere++ %7B%0A%09%09//adicionar na fila%0A%09%09//times.push()%0A%09%09//quero a string, n%C3%A3o o unicode%0A%09%09times.Enqueue(string(caractere))%0A%09%7D\n+package main%0A%0Aimport (%0A)%0A%0Afunc main() %7B\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-12_10-56-16",
+            "content": "@@ -467,27 +467,8 @@\n in%0A%0A\n-import (%0A%09%22fmt%22%0A)%0A%0A\n func\n@@ -934,486 +934,9 @@\n e))%0A\n-%0A%09%09//cada jogo pega duas letras por vez%0A%09%09time1 := times.Dequeue()%0A%09%09time2 := times.Dequeue()%0A%0A%09%09//gols associados a cada time%0A%09%09var gol1, gol2 int%0A%09%09fmt.Scan(&gol1, &gol2)%0A%0A%09%09//selecionar o maior gol, e este entra pra fila de times de novo%0A%09%09//meio que vai cortando a quantidade pela metade at%C3%A9 sobrar um, o vencedor%0A%09%09if gol1 %3E gol2 %7B%0A%09%09%09times.Enqueue(time1)%0A%09%09%7D else %7B%0A%09%09%09times.Enqueue(time2)%0A%09%09%7D%0A%09%7D%0A%0A%09//no final sobre um n%C3%A9%0A%09ganhador := times.Dequeue()%0A%09fmt.Println(ganhador)\n+%09%7D\n %0A%7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-12_11-06-12",
+            "content": "@@ -952,133 +952,8 @@\n re))\n-%0A%09%7D%0A%09//depois que todos os times (representados por letras) estiverem na fila, adicionamos os gols%0A%09for i := 0; i %3C 15; i++ %7B\n %0A%0A%09%09\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-06-12_11-11-38",
+            "content": "//esta meio confuso mas vamos l\u00e1\n//s\u00e3o 15 jogos\n//16 times diferentes\n//2 times (duas letras) jogam um jogo por vez\n//vai de A a P(16 letras)\n//A - B\n//2   3 />representa a pontua\u00e7\u00e3o de cada um\n//8 jogos in\u00edcio\n//dps 4\n//dps 2\n//dps 1\n//ganhador\n// 2 3 - B\n// 3 1 - C\n// 2 1 E\n// 1 5 H\n// 2 4 J\n// 5 4 K\n// 5 2 M\n// 2 5 P\n\n// 1 4 times B e C - C\n// 1 5 E e H - H\n// 2 5 J e K - K\n// 3 4 M e P - P\n\n// 1 2 C e H - H\n// 5 3 K e P - K\n\n// 5 1 H e K - H ganha\npackage main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\t//primeiro eu tenho que criar uma fila com os 15 times\n\t//NewQueue \u00e9 a fun\u00e7\u00e3o de cria\u00e7\u00e3o de fila que vou usar\n\t//como s\u00e3o letras, o tipo \u00e9 string\n\ttimes := NewQueue[string]()\n\t//come\u00e7ando em A, indo at\u00e9 P\n\t//pesquisar sobre como adicionar strings\n\t//UniCode , cada caractere representa um\n\tfor caractere := 'A'; caractere <= 'P'; caractere++ {\n\t\t//adicionar na fila\n\t\t//times.push()\n\t\t//quero a string, n\u00e3o o unicode\n\t\ttimes.Enqueue(string(caractere))\n\t}\n\t//depois que todos os times (representados por letras) estiverem na fila, adicionamos os gols\n\tfor i := 0; i < 15; i++ {\n\n\t\t//cada jogo pega duas letras por vez\n\t\ttime1 := times.Dequeue()\n\t\ttime2 := times.Dequeue()\n\n\t\t//gols associados a cada time\n\t\tvar gol1, gol2 int\n\t\tfmt.Scan(&gol1, &gol2)\n\n\t\t//selecionar o maior gol, e este entra pra fila de times de novo\n\t\t//meio que vai cortando a quantidade pela metade at\u00e9 sobrar um, o vencedor\n\t\tif gol1 > gol2 {\n\t\t\ttimes.Enqueue(time1)\n\t\t} else {\n\t\t\ttimes.Enqueue(time2)\n\t\t}\n\t}\n\n\t//no final sobre um n\u00e9\n\tganhador := times.Dequeue()\n\tfmt.Println(ganhador)\n}\n",
+            "lines": "74"
+        }
+    ]
+}

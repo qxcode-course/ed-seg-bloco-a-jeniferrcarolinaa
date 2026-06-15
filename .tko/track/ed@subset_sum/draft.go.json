@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_14-38-40",
+            "content": "@@ -2153,17 +2153,24 @@\n  0; i %3C \n-n\n+len(vet)\n ; i++ %7B%0A\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-06-15_14-41-56",
+            "content": "@@ -2194,18 +2194,16 @@\n %5D)%0A%09%7D%0A%0A%09\n-//\n resultad\n@@ -2251,36 +2251,19 @@\n tln(\n-Backtraking(vet, 0, 0, k))%0A%09\n+resultado) \n // r\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-06-15_14-46-31",
+            "content": "@@ -1367,16 +1367,64 @@\n rue%0A%09%7D%0A%0A\n+%09if indiceAtual == len(vet) %7B%0A%09%09return false%0A%09%7D%0A\n %09//+ 1 c\n@@ -1522,57 +1522,8 @@\n %09%7D%0A%0A\n-%09if indiceAtual == len(vet) %7B%0A%09%09return false%0A%09%7D%0A%0A\n %09//d\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-06-15_14-47-11",
+            "content": "@@ -1698,11 +1698,11 @@\n tual\n-,  \n++1,\n     \n@@ -1817,16 +1817,18 @@\n iceAtual\n++1\n ,%0A%09%09soma\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-15_14-58-28",
+            "content": "@@ -1694,19 +1694,19 @@\n iceAtual\n-+1,\n+,  \n         \n@@ -1821,10 +1821,8 @@\n tual\n-+1\n ,%0A%09%09\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-15_14-59-01",
+            "content": "@@ -1486,17 +1486,17 @@\n ceAtual \n-%3E\n+=\n = len(ve\n@@ -2173,16 +2173,17 @@\n fmt.Scan\n+f\n (%22%25d%22, &\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-15_15-47-05",
+            "content": "@@ -2073,24 +2073,25 @@\n nt%0A%09fmt.Scan\n+f\n (%22%25d %25d%22, &n\n@@ -2239,102 +2239,10 @@\n  k)%0A\n+%0A\n %09\n-if Backtraking(vet, 0, 0, k) %7B%0A%09%09fmt.Println(%22true%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22false%22)%0A%09%7D%0A%09// \n fmt.\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-15_15-50-18",
+            "content": "@@ -2069,18 +2069,16 @@\n  k int%0A%09\n-//\n fmt.Scan\n@@ -2099,65 +2099,8 @@\n &k)%0A\n-%09if _, err := fmt.Scan(&n, &k); err != nil %7B%0A%09%09return%0A%09%7D%0A\n %09vet\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-06-15_15-51-14",
+            "content": "@@ -2069,16 +2069,18 @@\n  k int%0A%09\n+//\n fmt.Scan\n@@ -2097,16 +2097,73 @@\n &n, &k)%0A\n+%09if _, err := fmt.Scan(&n, &k); err != nil %7B%0A%09%09return%0A%09%7D%0A\n %09vet := \n",
+            "lines": "98"
+        },
+        {
+            "label": "2026-06-15_15-51-51",
+            "content": "@@ -1374,14 +1374,19 @@\n %0A%09//\n++ 1\n  caso \n+%C3%A9 \n quan\n@@ -1452,35 +1452,8 @@\n Alvo\n- %7C%7C indiceAtual %3E= len(vet)\n  %7B%0A%09\n@@ -1471,19 +1471,16 @@\n se%0A%09%7D%0A%0A%09\n-// \n if indic\n@@ -1501,19 +1501,16 @@\n vet) %7B%0A%09\n-// \n %09return \n@@ -1516,19 +1516,16 @@\n  false%0A%09\n-// \n %7D%0A%0A%09//de\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-06-15_15-52-54",
+            "content": "@@ -1684,19 +1684,16 @@\n emento%0A%09\n-// \n pega := \n@@ -1709,313 +1709,8 @@\n ng(%0A\n-%09// %09vet,%0A%09// %09indiceAtual+1,              //avan%C3%A7a%0A%09// %09somaAtual+vet%5BindiceAtual%5D, //soma%0A%09// %09valorAlvo,%0A%09// )%0A%09// ignora := Backtraking(%0A%09// %09vet,%0A%09// %09indiceAtual+1,%0A%09// %09somaAtual, //ignora%0A%09// %09valorAlvo,%0A%09// )%0A%09// //vai retornar um dos dois caminhos%0A%09// return pega %7C%7C ignora%0A%09return Backtraking(%0A\n %09%09ve\n@@ -1803,19 +1803,27 @@\n Alvo,%0A%09)\n- %7C%7C\n+%0A%09ignora :=\n  Backtra\n@@ -1887,19 +1887,79 @@\n orAlvo,%0A\n-\n %09)%0A\n+%09//vai retornar um dos dois caminhos%0A%09return pega %7C%7C ignora%0A\n %7D%0A%0A//ago\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-06-15_15-57-07",
+            "content": "@@ -1376,17 +1376,16 @@\n // caso \n- \n quando s\n@@ -1418,16 +1418,16 @@\n or alvo%0A\n+\n %09if soma\n@@ -1684,16 +1684,19 @@\n emento%0A%09\n+// \n pega := \n@@ -1700,32 +1700,337 @@\n := Backtraking(%0A\n+%09// %09vet,%0A%09// %09indiceAtual+1,              //avan%C3%A7a%0A%09// %09somaAtual+vet%5BindiceAtual%5D, //soma%0A%09// %09valorAlvo,%0A%09// )%0A%09// ignora := Backtraking(%0A%09// %09vet,%0A%09// %09indiceAtual+1,%0A%09// %09somaAtual, //ignora%0A%09// %09valorAlvo,%0A%09// )%0A%09// //vai retornar um dos dois caminhos%0A%09// return pega %7C%7C ignora%0A%09return Backtraking(%0A\n %09%09vet,%0A%09%09indiceA\n@@ -2115,19 +2115,11 @@\n ,%0A%09)\n-%0A%09ignora :=\n+ %7C%7C\n  Bac\n@@ -2194,68 +2194,8 @@\n %0A%09)%0A\n-%09//vai retornar um dos dois caminhos%0A%09return pega %7C%7C ignora%0A\n %7D%0A%0A/\n@@ -2339,16 +2339,16 @@\n , k int%0A\n-\n %09fmt.Sca\n@@ -2349,16 +2349,25 @@\n mt.Scan(\n+%22%25d %25d%22, \n &n, &k)%0A\n",
+            "lines": "106"
+        },
+        {
+            "label": "2026-06-15_15-59-19",
+            "content": "@@ -2196,16 +2196,22 @@\n mt.Scan(\n+%22%25d%22, \n &vet%5Bi%5D)\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-06-15_15-59-46",
+            "content": "//teoria backtraking\n//queremos achar n\u00fameros em um conjunto.\n//quando somados, deve resultar no inteiro que buscamos\n//retorna true se houver uma soma que resulte no n\u00famero\n//lembra conceito de arvore de decis\u00f5es\n//explora\u00e7\u00e3o de possibilidades\n//entra fun\u00e7\u00e3o recursiva\n//toda fun\u00e7\u00e3o precisa saber: \"onde estou\"/\u00edndice e \"quanto j\u00e1 somei\"\n//ent a pergunta \u00e9: a partir de onde estou consigo chegar ao valor alvo? se sim, retorna true\n//vari\u00e1veis envolvidas seriam: vet []int, indiceAtual, somaAtual, valorAlvo\n//h\u00e1 dois casos: valorAlvo = somaAtual ee cheguei ao final mas n\u00e3o encontrei o valor (indiceAtual = len(vet))\n//responder \u00e0 pergunta se pega ou n\u00e3o o pr\u00f3ximo n\u00famero e o adiciona \u00e0 soma\n//chamadas rercusivas: uma fun\u00e7\u00e3o que chama ela mesma\n//exemplo\n\npackage main\n\nimport \"fmt\"\n\n// func contar(n int){\n//     fmt.Println(n)\n//     if n == 0{\n//         return\n//     }\n\n//     contar(n-1)\n//     //se n = 4\n//     //contar(3)\n//     //contar(2)\n//     //contar(1)\n//     //contar(0)\n// }\n\n//assim, precisa de uma fun\u00e7\u00e3o que chame ela mesma, em busca do valorAlvo\n//e ela vai se chamando at\u00e9 que a soma seja igual ao alvo\n\nfunc Backtraking(vet []int, indiceAtual int, somaAtual int, valorAlvo int) bool {\n\t//pensando nos dois casos\n\t//se a soma for igual ao alvo\n\t//se chegou at\u00e9 o fim e n\u00e3o encontrou o valor procurado\n\tif somaAtual == valorAlvo {\n\t\treturn true\n\t}\n\n\t// caso  quando soma atual ultrapassa o valor alvo\n\tif somaAtual > valorAlvo || indiceAtual >= len(vet) {\n\t\treturn false\n\t}\n\n\t// if indiceAtual >= len(vet) {\n\t// \treturn false\n\t// }\n\n\t//depois de verificar, eu tenho duas chamadas:\n\t// a primeira \u00e9 decidir se eu pego o elemento.\n\t//a outra \u00e9 se eu ignoro o elemento\n\tpega := Backtraking(\n\t\tvet,\n\t\tindiceAtual+1,              //avan\u00e7a\n\t\tsomaAtual+vet[indiceAtual], //soma\n\t\tvalorAlvo,\n\t)\n\tignora := Backtraking(\n\t\tvet,\n\t\tindiceAtual+1,\n\t\tsomaAtual, //ignora\n\t\tvalorAlvo,\n\t)\n\t//vai retornar um dos dois caminhos\n\treturn pega || ignora\n}\n\n//agora a main\nfunc main() {\n\t//preciso ler n e k\n\t//criar o vetor de tamanho n\n\t//ler n n\u00fameros (for)\n\t//chamar a func backtraking\n\tvar n, k int\n\tfmt.Scan(&n, &k)\n\tvet := make([]int, n) //vetor de tam n\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vet[i])\n\t}\n\n\t//resultado := Backtraking(vet, 0, 0, k)\n\tif Backtraking(vet, 0, 0, k) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n\t// fmt.Println(Backtraking(vet, 0, 0, k))\n\t// retorna se \u00e9 true ou false\n}\n",
+            "lines": "95"
+        }
+    ]
+}

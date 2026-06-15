@@ -60,3 +60,39 @@
 2026-06-12 11:11:30, MOVE, v:1, k:ed@chaves, mode:EDIT
 2026-06-12 11:13:43, MOVE, v:1, k:ed@chaves, mode:BACK
 2026-06-12 11:14:44, SELF, v:1, k:ed@chaves, self:1, rate:100, study:45, refactor:1
+2026-06-12 11:18:42, MOVE, v:1, k:ed@queimando, mode:DOWN
+2026-06-12 11:19:22, MOVE, v:1, k:ed@queimando, mode:PICK
+2026-06-12 11:19:33, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 11:18:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 11:18:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 11:19:33, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 11:19:33, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 11:48:02, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:06:06, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:07:39, EXEC, v:1, k:ed@queimando, mode:FULL, rate:20, size:110
+2026-06-12 12:07:50, EXEC, v:1, k:ed@queimando, mode:FULL, rate:20
+2026-06-12 12:07:50, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:19:30, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:21:59, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:22:05, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:22:05, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:22:56, EXEC, v:1, k:ed@queimando, mode:FULL, rate:0, size:133
+2026-06-12 12:22:58, EXEC, v:1, k:ed@queimando, mode:FULL, rate:0
+2026-06-12 12:23:36, EXEC, v:1, k:ed@queimando, mode:FULL, rate:0
+2026-06-12 12:23:42, EXEC, v:1, k:ed@queimando, mode:FULL, rate:0
+2026-06-12 12:23:42, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:29:44, EXEC, v:1, k:ed@queimando, mode:FULL, rate:100, size:133
+2026-06-12 12:29:35, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 12:29:44, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 17:51:55, MOVE, v:1, k:ed@queimando, mode:BACK
+2026-06-12 17:52:29, SELF, v:1, k:ed@queimando, self:1, rate:100, study:70, friend:Joao Filipe, concept:1, refactor:1
+2026-06-12 17:54:18, MOVE, v:1, k:ed@pilhado, mode:DOWN
+2026-06-12 17:54:49, MOVE, v:1, k:ed@pilhado, mode:PICK
+2026-06-12 17:55:02, MOVE, v:1, k:ed@pilhado, mode:EDIT
+2026-06-12 17:54:18, MOVE, v:1, k:ed@pilhado, mode:EDIT
+2026-06-12 17:54:18, MOVE, v:1, k:ed@pilhado, mode:EDIT
+2026-06-12 17:55:03, MOVE, v:1, k:ed@pilhado, mode:EDIT
+2026-06-12 17:55:02, MOVE, v:1, k:ed@pilhado, mode:EDIT
+2026-06-12 17:54:33, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 17:54:35, MOVE, v:1, k:ed@queimando, mode:EDIT
+2026-06-12 17:58:50, MOVE, v:1, k:ed@pilhado, mode:BACK

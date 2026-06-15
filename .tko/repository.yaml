@@ -13,19 +13,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@rec
+- ed@backtrack
 - sandbox@sandbox
-- ed@list
-- ed@basic
 - ed@linear
-- ed@vector
-- ed@map_set
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@chaves
-selected_index: 65
+selected: ed@bufferring
+selected_index: 8

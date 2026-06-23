@@ -78,3 +78,8 @@
 2026-06-15 18:35:19, EXEC, v:1, k:ed@distancia, mode:FULL, size:74, fail:COMP
 2026-06-15 18:35:16, MOVE, v:1, k:ed@distancia, mode:EDIT
 2026-06-15 18:50:58, EXEC, v:1, k:ed@distancia, mode:FULL, rate:100, size:92
+2026-06-15 18:51:40, MOVE, v:1, k:ed@distancia, mode:BACK
+2026-06-15 18:50:44, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-15 18:50:57, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-15 18:51:23, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-15 18:52:13, SELF, v:1, k:ed@distancia, self:1, rate:100, study:80, concept:1

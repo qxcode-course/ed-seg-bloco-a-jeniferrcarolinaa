@@ -13,15 +13,17 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@linear
 - sandbox@sandbox
+- ed@linear
 - ed@backtrack
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'false'
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: true
+  interval_seconds: null
 lang: go
-selected: ed@distancia
-selected_index: 20
+selected: ed@wordsearch
+selected_index: 21

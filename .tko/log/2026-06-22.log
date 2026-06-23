@@ -1,0 +1,28 @@
+2026-06-22 21:36:56, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-06-22 21:36:56, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 21:41:46, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 21:46:38, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 21:50:27, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 21:56:43, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:01:41, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:06:45, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:11:45, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:16:44, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:21:38, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:26:45, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:29:51, EXEC, v:1, k:ed@wordsearch, mode:FULL, size:132, fail:COMP
+2026-06-22 22:31:44, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:29:43, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:31:51, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25, size:132
+2026-06-22 22:31:51, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:36:39, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:38:47, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:75, size:149
+2026-06-22 22:41:15, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:75, size:151
+2026-06-22 22:39:51, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:38:45, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:41:15, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:43:45, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:100, size:151
+2026-06-22 22:43:57, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-06-22 22:44:40, SELF, v:1, k:ed@wordsearch, self:1, rate:100, study:80, concept:1
+2026-06-22 22:43:39, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-06-22 22:43:45, MOVE, v:1, k:ed@wordsearch, mode:EDIT
